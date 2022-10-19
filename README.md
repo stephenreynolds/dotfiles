@@ -4,7 +4,7 @@
 
 ```bash
 # Create an alias for git to use when working with the repo
-echo 'alias dotfiles="git --git-dir $HOME/.dotfiles --work-tree=/"' >> $HOME/.zshrc
+echo 'alias dotfiles="git --git-dir $HOME/.dotfiles --work-tree=$HOME"' >> $HOME/.zshrc
 
 # Reload so the new alias can be used
 exec zsh
