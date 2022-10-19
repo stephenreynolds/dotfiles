@@ -1,4 +1,4 @@
-# dotfiles - Gentoo
+# dotfiles
 
 ## Install on a new system
 
