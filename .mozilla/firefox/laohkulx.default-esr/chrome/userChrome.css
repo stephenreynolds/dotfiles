@@ -1,0 +1,26 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#placesContext_openContainer\:tabs,
+#placesContext_openLinks\:tabs,
+#placesContext_openSeparator {
+ display: none !important;
+}
+
+#BMB_bookmarksPopup .openintabs-menuitem,
+#bookmarksMenuPopup .openintabs-menuitem {
+  display: none !important;
+}
+
+/* ROOT - VARS */
+*|*:root {
+ --tab-min-height:      25px !important; /* adjust */
+ --tab-max-height:      40px !important;
+}
+
+/* TABS: height */
+#tabbrowser-tabs,
+#tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+.tabbrowser-tabs .tabbrowser-tab {
+  min-height: var(--tab-min-height) !important;
+  max-height: var(--tab-man-height) !important;
+}

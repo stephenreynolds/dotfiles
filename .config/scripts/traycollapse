@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if pgrep -x "stalonetray" > /dev/null
+then
+    killall stalonetray
+else
+    stalonetray
+fi
