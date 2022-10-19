@@ -3,7 +3,6 @@ local beautiful = require("beautiful")
 local gears = require("gears")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local main_menu = require("widgets.main-menu")
-local menubar = require("widgets.menubar")
 
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
@@ -15,6 +14,10 @@ root.buttons(gears.table.join(
     awful.button({}, 4, awful.tag.viewnext),
     awful.button({}, 5, awful.tag.viewprev)
 ))
+
+local clamp = function(n, min, max)
+    return math.min(math.max(n, min), max)
+end
 
 -- Keybindings
 globalkeys = gears.table.join(
@@ -118,9 +121,37 @@ globalkeys = gears.table.join(
         { description = "show rofi", group = "launcher" }),
 
     -- Media keys
-    awful.key({}, "XF86AudioRaiseVolume", function() os.execute("pactl set-sink-volume 0 +5%") end),
-    awful.key({}, "XF86AudioLowerVolume", function() os.execute("pactl set-sink-volume 0 -5%") end),
-    awful.key({}, "XF86AudioMute", function() os.execute("pactl set-sink-mute 0 toggle") end),
+    awful.key({}, "XF86AudioRaiseVolume",
+        function()
+            awful.spawn.easy_async_with_shell(
+            "pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \\([0-9][0-9]*\\)%.*,\\1,'",
+                function(stdout)
+                    local volume = tonumber(stdout)
+                    local new_volume = volume + 5
+                    if new_volume > 100 then new_volume = 100 end
+                    os.execute("pactl set-sink-volume 0 " .. tostring(new_volume) .. "%")
+                    awesome.emit_signal("volume_change")
+                end
+            )
+        end),
+    awful.key({}, "XF86AudioLowerVolume",
+        function()
+            awful.spawn.easy_async_with_shell(
+            "pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \\([0-9][0-9]*\\)%.*,\\1,'",
+                function(stdout)
+                    local volume = tonumber(stdout)
+                    local new_volume = volume - 5
+                    if new_volume < 0 then new_volume = 0 end
+                    os.execute("pactl set-sink-volume 0 " .. tostring(new_volume) .. "%")
+                    awesome.emit_signal("volume_change")
+                end
+            )
+        end),
+    awful.key({}, "XF86AudioMute",
+        function()
+            os.execute("pactl set-sink-mute 0 toggle")
+            awesome.emit_signal("volume_change")
+        end),
     awful.key({}, "XF86AudioPlay", function() os.execute("playerctl play-pause") end),
     awful.key({}, "XF86AudioPrev", function() os.execute("playerctl previous") end),
     awful.key({}, "XF86AudioNext", function() os.execute("playerctl next") end),

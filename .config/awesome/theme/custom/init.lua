@@ -1,6 +1,7 @@
 local theme_name = "custom"
 
 local filesystem = require("gears.filesystem")
+local icons_path = filesystem.get_configuration_dir() .. "/icons/"
 local themes_path = filesystem.get_configuration_dir() .. "/theme/" .. theme_name .. "/"
 local dpi = require("beautiful.xresources").apply_dpi
 
@@ -86,8 +87,8 @@ theme.taglist_squares_unsel = themes_path .. "taglist/squarez.png"
 --theme.taglist_squares_resize = "false"
 
 -- Misc
-theme.awesome_icon           = themes_path .. "gentoo-logo.svg"
-theme.menu_submenu_icon      = themes_path .. "submenu.png"
+theme.awesome_icon           = icons_path .. "gentoo-logo.svg"
+theme.menu_submenu_icon      = icons_path .. "submenu.png"
 
 -- Layout
 theme.layout_tile       = themes_path .. "layouts/tile.png"
