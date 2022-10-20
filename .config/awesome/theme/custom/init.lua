@@ -34,7 +34,7 @@ theme.border_marked = "#CC9393"
 
 -- Gaps
 theme.useless_gap = dpi(5)
---theme.gap_single_client = false
+theme.gap_single_client = false
 
 -- Titlebars
 theme.titlebar_bg_focus  = "#000000cc"

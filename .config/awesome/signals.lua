@@ -6,9 +6,9 @@ local wibox = require("wibox")
 -- Disable rounded corners when window is maximized, fullscreen, or by itself
 -- BUG: Does not work with a non-maximized window over a maximized one
 function handle_maximized(c)
-    --local single_client = c.screen.clients[2] == nil
+    local single_client = c.screen.clients[2] == nil
 
-    if c.maximized or c.fullscreen or (c.screen.selected_tag and c.screen.selected_tag.gap == 0) then
+    if single_client or c.maximized or c.fullscreen or (c.screen.selected_tag and c.screen.selected_tag.gap == 0) then
         c.shape = function(cr, w, h) gears.shape.rectangle(cr, w, h) end
     else
         c.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, 10) end

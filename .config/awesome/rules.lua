@@ -38,7 +38,8 @@ awful.rules.rules = {
     -- Add property to indicate window is a terminal
     { rule_any = {
         class = {
-            "kitty"
+            "kitty",
+            "st"
         }
     }, properties = {
         is_terminal = true

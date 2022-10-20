@@ -218,7 +218,7 @@ clientkeys = gears.table.join(
         { description = "minimize", group = "client" }),
 
     -- Toggle titlebars
-    awful.key({ modkey, "Control" }, "Tab", awful.titlebar.toggle,
+    awful.key({ modkey }, "x", awful.titlebar.toggle,
         { description = "toggle titlebars", group = "client" }),
 
     -- Move focus by direction
