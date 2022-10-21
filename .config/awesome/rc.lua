@@ -388,8 +388,7 @@ awful.screen.connect_for_each_screen(function(s)
       utils.widget.compose{
         {
           systray,
-          color = beautiful.fg_normal,
-          shape = utils.shape.parallelogram.right
+          margin = beautiful.gap
         }
       },
 

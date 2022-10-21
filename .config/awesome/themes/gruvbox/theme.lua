@@ -133,7 +133,7 @@ theme.wibar_height     = dpi(21)
 theme.titlebar_height  = dpi(20)
 
 -- Systray
-theme.systray_icon_spacing = theme.gap
+theme.systray_icon_spacing = theme.big_gap
 
 -- All Widgets
 theme.widget_markup = "<span weight='heavy' color=%q>%s</span>"
