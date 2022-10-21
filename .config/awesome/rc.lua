@@ -794,7 +794,7 @@ client.connect_signal("request::titlebars", function(c)
     end)
   )
 
-  awful.titlebar(c, {size = beautiful.titlebar_height, position = "bottom"}):setup {
+  awful.titlebar(c, {size = beautiful.titlebar_height, position = "top"}):setup {
     nil,
     nil,
     {
@@ -935,9 +935,9 @@ client.connect_signal("unfocus", buttons_remove)
 -------------------------------------------------------------------------------
 client.connect_signal("property::floating", function(c)
   if c.floating and not (c.maximized or c.requests_no_titlebar) then
-    awful.titlebar.show(c, "bottom")
+    awful.titlebar.show(c, "top")
   else
-    awful.titlebar.hide(c, "bottom")
+    awful.titlebar.hide(c, "top")
   end
 end)
 
