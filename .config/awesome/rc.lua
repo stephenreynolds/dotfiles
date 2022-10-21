@@ -358,6 +358,8 @@ awful.screen.connect_for_each_screen(function(s)
     buttons = taglist_buttons
   }
 
+  local systray = wibox.widget.systray()
+
 -- Wibar
 -------------------------------------------------------------------------------
   -- Create the wibar
@@ -382,6 +384,14 @@ awful.screen.connect_for_each_screen(function(s)
     },
     { -- Right widgets
       wibox.container.margin(modalawesome.sequence, beautiful.gap, beautiful.big_gap),
+
+      utils.widget.compose{
+        {
+          systray,
+          color = beautiful.fg_normal,
+          shape = utils.shape.parallelogram.right
+        }
+      },
 
       -- Internet Widget
       utils.widget.compose{
@@ -530,6 +540,17 @@ modes.tag = gears.table.join(
 modes.launcher = gears.table.join(
   {
     {
+      description = "launch terminal",
+      pattern = {'%d*', 't'},
+      handler = function(_, count)
+        count = count == '' and 1 or tonumber(count)
+
+        for i = 1, count, 1 do
+          awful.spawn(terminal)
+        end
+      end
+    },
+    {
       description = "launch lf",
       pattern = {'f'},
       handler = function() awful.spawn(terminal.." -e lf") end
@@ -538,11 +559,6 @@ modes.launcher = gears.table.join(
       description = "launch browser",
       pattern = {'w'},
       handler = function() awful.spawn(browser) end
-    },
-    {
-      description = "lock screen",
-      pattern = {'l'},
-      handler = function() awful.spawn("physlock -s", false) end
     },
     {
       description = "launch ncmpcpp",
