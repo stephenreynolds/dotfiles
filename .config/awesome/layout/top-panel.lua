@@ -6,6 +6,7 @@ local layout_box = require("widgets.layout-box")
 local taglist = require("widgets.taglist")
 local tasklist = require("widgets.tasklist")
 local tray = require("widgets.tray")
+local modalawesome = require("modalawesome")
 
 local top_panel = function(s)
     -- Create tags with predefined layouts
@@ -48,6 +49,7 @@ local top_panel = function(s)
             layout = wibox.layout.fixed.horizontal,
             launcher,
             s.taglist,
+            modalawesome.active_mode,
             s.promptbox
         },
         {
@@ -58,6 +60,7 @@ local top_panel = function(s)
         {
             -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            modalawesome.sequence,
             tray,
             clock,
             s.layoutbox

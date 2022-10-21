@@ -1,6 +1,6 @@
 pcall(require, "luarocks.loader")
 require("awful.autofocus")
-local beautiful = require("beautiful")
+local modalawesome = require("modalawesome")
 
 -- Error handling
 require("error-handling")
@@ -12,7 +12,12 @@ require("theme")
 require("variables")
 
 -- Keybindings
-require("keybindings")
+--require("keybindings")
+modalawesome.init({
+  modkey = modkey,
+  modes = require("input.modes"),
+  keybindings = require("input.keybindings")
+})
 
 -- Layouts
 require("layouts")
