@@ -1,14 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
 
-#placesContext_openContainer\:tabs,
-#placesContext_openLinks\:tabs,
-#placesContext_openSeparator {
- display: none !important;
-}
-
-#BMB_bookmarksPopup .openintabs-menuitem,
-#bookmarksMenuPopup .openintabs-menuitem {
-  display: none !important;
+.openintabs-menuseparator,
+.openintabs-menuitem,
+.bookmarks-actions-menuseparator { 
+    display: none !important; 
 }
 
 /* ROOT - VARS */
