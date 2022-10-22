@@ -673,6 +673,11 @@ awful.rules.rules = {
     }
   },
 
+  -- place email in tag 2
+  { rule = { class = "Mailspring" },
+    properties = { tag = tags[2] }
+  },
+
   -- dirty hack to preven Ctrl-q from closing firefox
   { rule = { class = "firefox" },
     properties = { keys = awful.key({ "Control" }, "q", function() end) }},
@@ -809,6 +814,8 @@ client.connect_signal("request::titlebars", function(c)
     layout = wibox.layout.align.horizontal
   }
 end)
+
+client.connect_signal("property::urgent", function(c) c:jump_to() end)
 
 -- smart border
 -------------------------------------------------------------------------------
@@ -951,5 +958,6 @@ awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell("numlockx on")
 awful.spawn.with_shell("ibus-daemon -drxR")
 awful.spawn.with_shell("thunar --daemon")
+awful.spawn.with_shell("xmodmap $HOME/.config/.Xmodmap")
 
 -- }}}
