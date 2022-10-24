@@ -57,7 +57,7 @@ theme.fg_urgent  = theme.lightorange
 
 --  Borders
 theme.useless_gap       = dpi(10)
-theme.gap_single_client = true
+theme.gap_single_client = false
 theme.border_width      = dpi(3)
 theme.border_normal     = theme.bg2
 theme.border_focus      = theme.bg4
@@ -189,4 +189,3 @@ theme.awesome_icon = theme_assets.awesome_icon(theme.menu_height, theme.bg_focus
 theme.logo  = theme_path .. "bar/gentoo.svg"
 
 return theme
-

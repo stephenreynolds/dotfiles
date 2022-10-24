@@ -326,7 +326,7 @@ awful.screen.connect_for_each_screen(function(s)
   set_wallpaper(s)
 
   -- Taglist
-  local ultrawide, highres = s.geometry.width / s.geometry.height > 2, s.geometry.height >= 1440
+  local ultrawide, highres = s.geometry.width / s.geometry.height > 2, s.geometry.height >= 1080
   for index, tag in ipairs(tags) do
     awful.tag.add(tag, {
       layout   = awful.layout.layouts[ultrawide and 1 or 2],
@@ -962,3 +962,4 @@ awful.spawn.with_shell("thunar --daemon")
 awful.spawn.with_shell("xmodmap $HOME/.config/.Xmodmap && xmodmap -e 'clear lock'")
 
 -- }}}
+
