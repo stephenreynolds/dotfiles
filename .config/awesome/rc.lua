@@ -81,6 +81,7 @@ awful.layout.layouts = {
   awful.layout.suit.tile.right,
   awful.layout.suit.tile.left,
   awful.layout.suit.fair,
+  awful.layout.suit.spiral.dwindle,
   awful.layout.suit.max
 }
 
@@ -958,6 +959,6 @@ awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell("numlockx on")
 awful.spawn.with_shell("ibus-daemon -drxR")
 awful.spawn.with_shell("thunar --daemon")
-awful.spawn.with_shell("xmodmap $HOME/.config/.Xmodmap")
+awful.spawn.with_shell("xmodmap $HOME/.config/.Xmodmap && xmodmap -e 'clear lock'")
 
 -- }}}
