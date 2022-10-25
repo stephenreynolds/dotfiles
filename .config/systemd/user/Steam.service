@@ -1,0 +1,5 @@
+[Unit]
+Description=Starts Steam
+
+[Service]
+ExecStart=steam -silent
