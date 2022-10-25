@@ -269,8 +269,8 @@ end
 -- Taglist
 -------------------------------------------------------------------------------
 -- Each screen has its own tag table.
--- "❹", "❺", "❻"
-local tags = { "❶", "❷", "❸" }
+-- "❸", "❹", "❺", "❻"
+local tags = { "❶", "❷" }
 
 -- Assign the buttons for the taglist
 local taglist_buttons = gears.table.join(
@@ -679,6 +679,12 @@ awful.rules.rules = {
     properties = { tag = tags[2] }
   },
 
+  -- start Steam maximized
+  {
+    rule = { class = "Steam" },
+    properties = { maximized = true }
+  },
+
   -- dirty hack to preven Ctrl-q from closing firefox
   { rule = { class = "firefox" },
     properties = { keys = awful.key({ "Control" }, "q", function() end) }},
@@ -955,11 +961,7 @@ end)
 -- {{{ Startup applications
 -------------------------------------------------------------------------------
 
-awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1")
-awful.spawn.with_shell("numlockx on")
-awful.spawn.with_shell("ibus-daemon -drxR")
-awful.spawn.with_shell("thunar --daemon")
-awful.spawn.with_shell("xmodmap $HOME/.config/.Xmodmap && xmodmap -e 'clear lock'")
+awful.spawn("systemctl --user start autostart.target")
 
 -- }}}
 
