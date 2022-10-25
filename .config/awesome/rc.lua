@@ -97,7 +97,7 @@ local myawesomemenu = {
   { "Restart", awesome.restart },
   { "Quit", function() awesome.quit() end},
   { "Open Terminal", terminal },
-  { "Lock", function() awesome.spawn("physlock -s") end },
+  { "Sleep", function() awesome.spawn("systemctl suspend") end },
   { "Reboot", function() awesome.spawn("systemctl reboot") end },
   { "Shutdown", function() awesome.spawn("systemctl poweroff") end },
 }
