@@ -25,7 +25,7 @@ yMMNNNNNNNmmmmmNNMmhs+/-`             Memory: 2457MiB / 32046MiB
 
 ```bash
 # Create an alias for git to use when working with the repo
-echo 'alias dotfiles="git --git-dir $HOME/.dotfiles --work-tree=$HOME"' >> $HOME/.zshrc
+echo 'alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"' >> $HOME/.zshrc
 
 # Reload so the new alias can be used
 exec zsh
@@ -34,28 +34,28 @@ exec zsh
 git clone --bare https://github.com/stephenreynolds/dotfiles.git $HOME/.dotfiles
 
 # Checkout the repo
-dotfiles checkout
+dots checkout
 
 # Prevent untracked files from showing in dotfiles status
-dotfiles config --local status.showUntrackedFiles no
+dots config --local status.showUntrackedFiles no
 ```
 
 ## Updating
 
-Use the `dotfiles` alias to update the repository.
+Use the `dots` alias to update the repository.
 
 ### Add/Update
 
-`dotfiles add .zshrc`
+`dots add .zshrc`
 
 ### Add all modified without new files
 
-`dotfiles add -u`
+`dots add -u`
 
 ### Commit
 
-`dotfiles commit -m "Add .zshrc`
+`dots commit -m "Add .zshrc`
 
 ### Push
 
-`dotfiles push`
+`dots push`
