@@ -1,9 +1,3 @@
-# Enable Portage completions
-autoload -U compinit promptinit
-compinit
-promptinit; prompt gentoo
-zstyle ':completion::complete:*' use-cache 1
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -72,7 +66,8 @@ ENABLE_CORRECTION="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 export FZF_DEFAULT_OPTS="--extended"
-export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -g ''"
+export FZF_DEFAULT_COMMAND="ag --ignore .git -g ''"
+
 export FZF_CTRL_T_COMMAND="ag --hidden --ignore .git -g '' --ignore '.cache' --ignore '.dotfiles' --ignore '.local' --ignore '.mozilla'"
 
 # Which plugins would you like to load?
@@ -80,7 +75,7 @@ export FZF_CTRL_T_COMMAND="ag --hidden --ignore .git -g '' --ignore '.cache' --i
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting)
+plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node dnf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,5 +104,7 @@ export GCM_CREDENTIAL_STORE=secretservice
 
 alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
 alias vim="nvim"
-alias e="nvim"
+alias e="$EDITOR"
 
+# zoxide
+eval "$(zoxide init zsh)"

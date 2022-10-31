@@ -1,0 +1,6 @@
+require('stephen.mason')
+require('stephen.telescope')
+require('stephen.lspconfig')
+require('stephen.treesitter')
+require('stephen.lualine')
+require('stephen.kanagawa')
