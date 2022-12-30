@@ -16,7 +16,7 @@ theme.wallpaper = home_path .. "/Pictures/Wallpapers/mikael-gustafsson-wallpaper
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+theme.font      = "Liberation Sans 10"
 
 -- {{{ Colors
 theme.fg_normal  = "#DCDCCC"
