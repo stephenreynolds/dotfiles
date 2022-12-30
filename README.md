@@ -1,24 +1,25 @@
 # dotfiles
 
 ```
-         -/oyddmdhs+:.                stephen@Stephen-PC 
-     -odNMMMMMMMMNNmhy+-`             ------------------ 
-   -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
- `omMMMMMMMMMMMMNmdmmmmddhhy/`        Kernel: 5.15.74-gentoo 
- omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Uptime: 42 mins 
-.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Packages: 754 (emerge) 
- oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Shell: fish 3.4.0 
-  :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   Resolution: 1920x1080, 1920x1080, 1920x1080 
-    .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   WM: awesome 
-       /mMMMMMMNNNmmmdddhhhhhmMNhs:   Theme: Adwaita-dark [GTK2/3] 
-    `oNMMMMMMMNNNmmmddddhhdmMNhs+`    Icons: Adwaita [GTK2/3] 
-  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      Terminal: kitty 
- /NMMMMMMMMNNNNmmmdddmNMNdso:`        CPU: Intel i7-7700K (8) @ 4.800GHz 
-+MMMMMMMNNNNNmmmmdmNMNdso/-           GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
-yMMNNNNNNNmmmmmNNMmhs+/-`             Memory: 2457MiB / 32046MiB 
-/hMMNNNNNNNNMNdhs++/-`
-`/ohdmmddhys+++/:.`                                           
-  `-//////:--.                                                
+             .',;::::;,'.                stephen@Stephen-PC 
+         .';:cccccccccccc:;,.            ------------------ 
+      .;cccccccccccccccccccccc;.         OS: Fedora release 37 (Thirty Seven) x86_64 
+    .:cccccccccccccccccccccccccc:.       Kernel: 6.0.15-300.fc37.x86_64 
+  .;ccccccccccccc;.:dddl:.;ccccccc;.     Uptime: 13 hours, 51 mins 
+ .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    Packages: 2252 (rpm), 1 (flatpak) 
+.:ccccccccccccc;KMMc;cc;xMMc:ccccccc:.   Shell: bash 5.2.9 
+,cccccccccccccc;MMM.;cc;;WW::cccccccc,   Resolution: 1920x1080, 1920x1080, 1920x1080 
+:cccccccccccccc;MMM.;cccccccccccccccc:   WM: awesome 
+:ccccccc;oxOOOo;MMM0OOk.;cccccccccccc:   Theme: Adwaita-dark [GTK2/3] 
+cccccc:0MMKxdd:;MMMkddc.;cccccccccccc;   Icons: Adwaita [GTK2/3] 
+ccccc:XM0';cccc;MMM.;cccccccccccccccc'   Terminal: kitty 
+ccccc;MMo;ccccc;MMW.;ccccccccccccccc;    CPU: Intel i7-7700K (8) @ 4.800GHz 
+ccccc;0MNc.ccc.xMMd:ccccccccccccccc;     GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
+cccccc;dNMWXXXWM0::cccccccccccccc:,      Memory: 6120MiB / 32030MiB 
+cccccccc;.:odl:.;cccccccccccccc:,.
+:cccccccccccccccccccccccccccc:'.                                 
+.:cccccccccccccccccccccc:;,..                                    
+  '::cccccccccccccc::;,.
 ```
 
 ## Install on a new system
