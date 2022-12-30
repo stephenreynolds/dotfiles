@@ -32,7 +32,7 @@ echo 'alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"' >> $HOME/.zs
 exec zsh
 
 # Clone the dotfiles repo
-git clone --bare https://github.com/stephenreynolds/dotfiles.git $HOME/.dotfiles
+git clone --bare --recurse-submodules https://github.com/stephenreynolds/dotfiles.git $HOME/.dotfiles
 
 # Checkout the repo
 dots checkout
