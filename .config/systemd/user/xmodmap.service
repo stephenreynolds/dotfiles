@@ -1,5 +1,0 @@
-[Unit]
-Description=Map CapsLock to Escape and Menu to CapsLock
-
-[Service]
-ExecStart=/bin/bash -c "xmodmap $HOME/.config/.Xmodmap && xmodmap -e 'clear lock'"
