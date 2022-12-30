@@ -45,6 +45,7 @@ export GCM_CREDENTIAL_STORE=secretservice
 
 # Aliases
 alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
+alias lazydots="lazygit -g $HOME/.dotfiles -w $HOME"
 alias vim="nvim"
 alias e="$EDITOR"
 
