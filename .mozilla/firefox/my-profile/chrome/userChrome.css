@@ -1,3 +1,5 @@
+@import "mono-firefox-theme/userChrome.css";
+
 .openintabs-menuseparator,
 .openintabs-menuitem,
 .bookmarks-actions-menuseparator { 
