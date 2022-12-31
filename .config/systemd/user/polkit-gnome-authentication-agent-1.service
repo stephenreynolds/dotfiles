@@ -1,5 +1,0 @@
-[Unit]
-Description=Starts GNOME polkit auth agent
-
-[Service]
-ExecStart=/usr/libexec/polkit-gnome-authentication-agent-1
