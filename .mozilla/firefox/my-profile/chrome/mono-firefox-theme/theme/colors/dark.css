@@ -24,9 +24,9 @@
         --gnome-inactive-sidebar-background: #252525;
 
         /* Header bar */
-        --gnome-headerbar-background: transparent;
+        --gnome-headerbar-background: rgba(0, 0, 0, 0.8);
         --gnome-headerbar-border-color: transparent;
-        --gnome-inactive-headerbar-background: transparent;
+        --gnome-inactive-headerbar-background: rgba(0, 0, 0, 0.8);
         --gnome-inactive-headerbar-border-color: transparent;
 
         /* Tabs */
@@ -57,7 +57,7 @@
         --gnome-button-active-close-background: #cf5251;
 
         /* Menus */
-        --gnome-menu-background: #333333;
+        --gnome-menu-background: rgba(0, 0, 0, 0.8) !important;
         --gnome-menu-border-color: rgba(255, 255, 255, 0.1);
         --gnome-menu-shadow: 0 1px 5px 1px transparent, 0 2px 14px 3px transparent;
         --gnome-menu-button-hover-background: rgba(255, 255, 255, 0.1);
