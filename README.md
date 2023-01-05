@@ -1,25 +1,24 @@
 # dotfiles
 
 ```
-             .',;::::;,'.                stephen@Stephen-PC 
-         .';:cccccccccccc:;,.            ------------------ 
-      .;cccccccccccccccccccccc;.         OS: Fedora release 37 (Thirty Seven) x86_64 
-    .:cccccccccccccccccccccccccc:.       Kernel: 6.0.15-300.fc37.x86_64 
-  .;ccccccccccccc;.:dddl:.;ccccccc;.     Uptime: 13 hours, 51 mins 
- .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    Packages: 2252 (rpm), 1 (flatpak) 
-.:ccccccccccccc;KMMc;cc;xMMc:ccccccc:.   Shell: bash 5.2.9 
-,cccccccccccccc;MMM.;cc;;WW::cccccccc,   Resolution: 1920x1080, 1920x1080, 1920x1080 
-:cccccccccccccc;MMM.;cccccccccccccccc:   WM: awesome 
-:ccccccc;oxOOOo;MMM0OOk.;cccccccccccc:   Theme: Adwaita-dark [GTK2/3] 
-cccccc:0MMKxdd:;MMMkddc.;cccccccccccc;   Icons: Adwaita [GTK2/3] 
-ccccc:XM0';cccc;MMM.;cccccccccccccccc'   Terminal: kitty 
-ccccc;MMo;ccccc;MMW.;ccccccccccccccc;    CPU: Intel i7-7700K (8) @ 4.800GHz 
-ccccc;0MNc.ccc.xMMd:ccccccccccccccc;     GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
-cccccc;dNMWXXXWM0::cccccccccccccc:,      Memory: 6120MiB / 32030MiB 
-cccccccc;.:odl:.;cccccccccccccc:,.
-:cccccccccccccccccccccccccccc:'.                                 
-.:cccccccccccccccccccccc:;,..                                    
-  '::cccccccccccccc::;,.
+         -/oyddmdhs+:.                stephen@Stephen-PC 
+     -odNMMMMMMMMNNmhy+-`             ------------------ 
+   -yNMMMMMMMMMMMNNNmmdhy+-           OS: Gentoo Linux x86_64 
+ `omMMMMMMMMMMMMNmdmmmmddhhy/`        Kernel: 5.15.85-gentoo-dist 
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Uptime: 11 mins 
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Packages: 864 (emerge), 10 (flatpak) 
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Shell: zsh 5.9 
+  :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   WM: awesome 
+    .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   Theme: Adwaita-dark [GTK2/3] 
+       /mMMMMMMNNNmmmdddhhhhhmMNhs:   Icons: Adwaita [GTK2/3] 
+    `oNMMMMMMMNNNmmmddddhhdmMNhs+`    Terminal: kitty 
+  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      CPU: Intel i7-7700K (8) @ 4.500GHz 
+ /NMMMMMMMMNNNNmmmdddmNMNdso:`        GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
++MMMMMMMNNNNNmmmmdmNMNdso/-           Memory: 1658MiB / 32042MiB 
+yMMNNNNNNNmmmmmNNMmhs+/-`
+/hMMNNNNNNNNMNdhs++/-`                                        
+`/ohdmmddhys+++/:.`                                           
+  `-//////:--.
 ```
 
 ## Install on a new system
