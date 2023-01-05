@@ -1,3 +1,8 @@
+# Portage completions
+autoload -U compinit promptinit
+compinit
+promptinit; prompt gentoo
+
 # Path
 export PATH=$HOME/.config/scripts:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH
 
@@ -25,7 +30,7 @@ export FZF_DEFAULT_COMMAND="ag --ignore .git -g ''"
 export FZF_CTRL_T_COMMAND="ag --hidden --ignore .git -g '' --ignore '.cache' --ignore '.dotfiles' --ignore '.local' --ignore '.mozilla'"
 
 # Plugin
-plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node dnf)
+plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node)
 
 # Oh My Zsh
 source $ZSH/oh-my-zsh.sh
