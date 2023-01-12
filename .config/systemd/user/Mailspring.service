@@ -1,5 +1,0 @@
-[Unit]
-Description=Starts Mailspring
-
-[Service]
-ExecStart=mailspring
