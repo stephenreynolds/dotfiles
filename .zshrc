@@ -49,6 +49,7 @@ alias lazydots="lazygit -g $HOME/.dotfiles -w $HOME"
 alias vim="nvim"
 alias e="$EDITOR"
 alias toolbox="SHELL=/bin/zsh toolbox"
+alias te="toolbox enter"
 
 # zoxide
 eval "$(zoxide init zsh)"
