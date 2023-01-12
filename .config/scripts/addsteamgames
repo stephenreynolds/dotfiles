@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cp -r $HOME/.var/app/com.valvesoftware.Steam/.local/share/icons/hicolor $HOME/.local/share
+
+cp -r $HOME/.var/app/com.valvesoftware.Steam/.local/share/applications $HOME/.local/share
+
+NEW_STR="flatpak run com.valvesoftware.Steam steam:"
+
+sed -i "s/steam steam:/$NEW_STR/g" $HOME/.local/share/applications/*.desktop
