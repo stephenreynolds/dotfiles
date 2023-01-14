@@ -50,6 +50,7 @@ alias vim="nvim"
 alias e="$EDITOR"
 alias toolbox="SHELL=/bin/zsh toolbox"
 alias te="toolbox enter"
+alias tr="toolbox run"
 
 # zoxide
 eval "$(zoxide init zsh)"
