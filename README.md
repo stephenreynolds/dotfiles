@@ -1,25 +1,25 @@
 # dotfiles
 
 ```
-             .',;::::;,'.                stephen@toolbox 
-         .';:cccccccccccc:;,.            --------------- 
-      .;cccccccccccccccccccccc;.         OS: Fedora Linux 37 (Container Image) x86_64 
-    .:cccccccccccccccccccccccccc:.       Kernel: 6.0.17-300.fc37.x86_64 
-  .;ccccccccccccc;.:dddl:.;ccccccc;.     Uptime: 5 hours, 23 mins 
- .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    Packages: 941 (rpm) 
-.:ccccccccccccc;KMMc;cc;xMMc:ccccccc:.   Shell: zsh 5.9 
-,cccccccccccccc;MMM.;cc;;WW::cccccccc,   Resolution: 1920x1080, 1920x1080, 1920x1080 
-:cccccccccccccc;MMM.;cccccccccccccccc:   DE: GNOME 43.2 
-:ccccccc;oxOOOo;MMM0OOk.;cccccccccccc:   WM: Mutter 
-cccccc:0MMKxdd:;MMMkddc.;cccccccccccc;   WM Theme: Adwaita 
-ccccc:XM0';cccc;MMM.;cccccccccccccccc'   Theme: adw-gtk3-dark [GTK2/3] 
-ccccc;MMo;ccccc;MMW.;ccccccccccccccc;    Icons: Adwaita [GTK2/3] 
-ccccc;0MNc.ccc.xMMd:ccccccccccccccc;     Terminal: conmon 
-cccccc;dNMWXXXWM0::cccccccccccccc:,      CPU: Intel i7-7700K (8) @ 4.800GHz 
-cccccccc;.:odl:.;cccccccccccccc:,.       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
-:cccccccccccccccccccccccccccc:'.         Memory: 4720MiB / 32030MiB 
-.:cccccccccccccccccccccc:;,..
-  '::cccccccccccccc::;,.                                         
+                   -`                    stephen@vmlinuz 
+                  .o+`                   --------------- 
+                 `ooo/                   OS: Arch Linux x86_64 
+                `+oooo:                  Host: VMware20,1 None 
+               `+oooooo:                 Kernel: 6.2.9-arch1-1 
+               -+oooooo+:                Uptime: 5 hours, 22 mins 
+             `/:-:++oooo+:               Packages: 902 (pacman), 7 (flatpak) 
+            `/++++/+++++++:              Shell: zsh 5.9 
+           `/++++++++++++++:             Resolution: 1920x1080, 1920x1080, 1920x1080 
+          `/+++ooooooooooooo/`           DE: GNOME 43.4 
+         ./ooosssso++osssssso+`          WM: awesome 
+        .oossssso-````/ossssss+`         Theme: Adwaita [GTK2/3] 
+       -osssssso.      :ssssssso.        Icons: Adwaita [GTK2/3] 
+      :osssssss/        osssso+++.       Terminal: kitty 
+     /ossssssss/        +ssssooo/-       CPU: Intel i7-7700K (8) @ 4.200GHz 
+   `/ossssso+/:-        -:/+osssso+-     GPU: 00:0f.0 VMware SVGA II Adapter 
+  `+sso+:-`                 `.-/+oso:    Memory: 2869MiB / 15996MiB 
+ `++:.                           `-/+/
+ .`                                 `/                           
 ```
 
 ## Install on a new system
