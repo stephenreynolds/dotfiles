@@ -25,7 +25,7 @@ export FZF_DEFAULT_COMMAND="ag --ignore .git -g ''"
 export FZF_CTRL_T_COMMAND="ag --hidden --ignore .git -g '' --ignore '.cache' --ignore '.dotfiles' --ignore '.local' --ignore '.mozilla'"
 
 # Plugin
-plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node dnf)
+plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node)
 
 # Oh My Zsh
 source $ZSH/oh-my-zsh.sh
@@ -46,11 +46,7 @@ export GCM_CREDENTIAL_STORE=secretservice
 # Aliases
 alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
 alias lazydots="lazygit -g $HOME/.dotfiles -w $HOME"
-alias vim="nvim"
 alias e="$EDITOR"
-alias toolbox="SHELL=/bin/zsh toolbox"
-alias te="toolbox enter"
-alias tr="toolbox run"
 
 # zoxide
 eval "$(zoxide init zsh)"
@@ -59,3 +55,10 @@ eval "$(zoxide init zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+function set_win_title(){
+    echo -ne "\033]0; $(basename "$PWD") \007"
+}
+starship_precmd_user_func="set_win_title"
+
+eval "$(starship init zsh)"

@@ -1,6 +1,6 @@
+[submodule ".config/awesome"]
+	path = .config/awesome
+	url = https://github.com/stephenreynolds/awesomewm
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/stephenreynolds/nvim
-[submodule ".var/app/org.mozilla.firefox/.mozilla/firefox/my-profile/chrome/firefox-gnome-theme"]
-	path = .var/app/org.mozilla.firefox/.mozilla/firefox/my-profile/chrome/firefox-gnome-theme
-	url = https://github.com/rafaelmardojai/firefox-gnome-theme.git
