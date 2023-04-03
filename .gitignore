@@ -1,4 +1,15 @@
-/home/stephen/.dotfiles
-
 # Vim swap files
 *.swp
+
+Downloads/
+Documents/
+Pictures/
+Videos/
+src/
+.vim/
+.npm/
+.local/
+.dotfiles/
+.cache/
+.config/microsoft-edge
+.config/OpenRGB/logs
