@@ -1,9 +1,0 @@
-#!/bin/bash
-
-cp -ruv $HOME/.var/app/com.valvesoftware.Steam/.local/share/icons $HOME/.local/share
-
-cp -ruv $HOME/.var/app/com.valvesoftware.Steam/.local/share/applications $HOME/.local/share
-
-NEW_STR="flatpak run com.valvesoftware.Steam steam:"
-
-sed -i "s/steam steam:/$NEW_STR/g" $HOME/.local/share/applications/*.desktop
