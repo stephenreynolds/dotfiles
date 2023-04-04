@@ -1,0 +1,114 @@
+{
+    "height": 27,
+    "layer": "top",
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+    "spacing": 5,
+    "modules-left": ["memory", "disk", "battery"], 
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["custom/clear-ram", "custom/backup", "backlight", "pulseaudio", "network", "clock", "tray"],
+
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "all-outputs": false,
+      "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+      }
+    },
+
+    "hyprland/window": {
+        "format": " {} ",
+        "separate-outputs": true,
+    },
+
+    "clock": {
+        "format": " {:%I:%M %p}",
+        "format-alt": " {:%a %b %d}",
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "cpu": {
+      "interval": 1,
+      "format": " {}%",
+      "max-length": 10,
+      "on-click": "alacritty -e btop",
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " {used}G",
+        "format-alt":" {}%",
+        "on-click": "alacritty -e btop",
+    },
+
+    "disk": {
+        "interval": 1800,
+        "format": " {used}",
+    },
+
+    "battery": {
+        "interval": 60,
+        "tooltip": false,
+        "format": "{icon} {capacity}%",
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "on-click": "sh ~/.local/bin/notifications/battery-info-left-click.sh",
+        "format-icons": ["", "", "", "", ""],
+    },
+
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+    },
+    
+    "network": {
+        "format-wifi": "直 {essid}",
+        "format-ethernet": " wired",
+        "on-click": "sh ~/.config/rofi/launchers/wifi/wifi.sh",
+        "format-disconnected": "睊  Disconnected",
+    },
+
+    "custom/backup": {
+        "format": "",
+        "on-click": "sh ~/.local/bin/mtool.sh -b",
+    },
+
+    "custom/pacman": {
+        "format": "{} ",
+        "interval": 1600,
+        "exec": "yay -Qqu | wc -l",
+        "on-click": "alacritty -e yay -Syu --noconfirm",
+        "signal": 8
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "婢  Muted",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+    },
+
+    "custom/clear-ram": {
+        "format": "",
+        "on-click": "sh ~/.local/bin/clear-ram.sh"
+    }
+}

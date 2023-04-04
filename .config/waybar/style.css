@@ -1,0 +1,107 @@
+* {
+  font-family: SF Pro Display Medium;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #e0def4;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-top: 8px transparent;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  margin: 16px 16px;
+}
+
+#workspaces button {
+  padding: 0 7px;
+  color: #908caa;
+  background-color: #26233a;
+  border-radius: 7.8px;
+}
+
+#workspaces button.focused {
+  color: #eb6f92;
+  background-color: #26233a;
+}
+
+#workspaces button.active {
+  color: #9ccfd8;
+}
+
+#workspaces button.urgent {
+  background-color: #eb6f92;
+}
+
+#clock,
+#battery,
+#cpu,
+#tray,
+#disk,
+#backlight,
+#network,
+#pulseaudio,
+#custom-backup,
+#custom-pacman,
+#custom-clear-ram,
+#memory,
+#workspaces {
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(31, 37, 48, 0.8);
+}
+
+#workspaces button {
+  background-color: transparent;
+  color: #cecacd;
+}
+
+#cpu {
+  color: #ebbcba;
+  background-color: #26233a;
+}
+
+#memory {
+  color: #f6c177;
+}
+
+#pulseaudio {
+  color: #9ccfd8;
+}
+
+#backlight {
+  color: #9ccfd8;
+}
+
+#clock {
+  color: #ebbcba;
+}
+
+#battery {
+  color: #c0caf5;
+}
+
+#disk {
+    color: #c4a7e7; 
+}
+
+#network {
+  color: #c4a7e7;
+}
+
+#network.disconnected {
+  color: #eb6f92;
+}
+
+#custom-backup {
+    color: #c0caf5;
+}
+
+#battery.warning {
+    color: #ebbcba;
+}
+
+#battery.critical {
+    color: #eb6f92;
+}
