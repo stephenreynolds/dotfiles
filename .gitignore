@@ -6,10 +6,14 @@ Documents/
 Pictures/
 Videos/
 src/
+.var/
 .vim/
 .npm/
 .local/
 .dotfiles/
 .cache/
+.config/discord
+.config/Mailspring
 .config/microsoft-edge
 .config/OpenRGB/logs
+.steam/
