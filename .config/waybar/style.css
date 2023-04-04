@@ -41,15 +41,28 @@ window#waybar {
 #disk,
 #backlight,
 #network,
+#bluetooth,
 #pulseaudio,
 #custom-backup,
 #custom-pacman,
 #custom-clear-ram,
 #memory,
-#workspaces {
+#workspaces,
+#taskbar,
+#window,
+#submap,
+#gamemode {
   padding: 0 10px;
   border-radius: 10px;
   background-color: rgba(31, 37, 48, 0.8);
+}
+
+#window {
+  color: #cecacd;
+}
+
+#gamemode {
+  color: #7ac08d;
 }
 
 #workspaces button {
@@ -59,11 +72,18 @@ window#waybar {
 
 #cpu {
   color: #ebbcba;
-  background-color: #26233a;
 }
 
 #memory {
   color: #f6c177;
+}
+
+#memory.warning {
+    color: #ebbcba;
+}
+
+#memory.critical {
+    color: #eb6f92;
 }
 
 #pulseaudio {
@@ -94,6 +114,18 @@ window#waybar {
   color: #eb6f92;
 }
 
+#bluetooth {
+  color: #4e80ae;
+}
+
+#bluetooth.on {
+  color: #4e80ae;
+}
+
+#bluetooth.off {
+  color: #747e88;
+}
+
 #custom-backup {
     color: #c0caf5;
 }
@@ -105,3 +137,4 @@ window#waybar {
 #battery.critical {
     color: #eb6f92;
 }
+
