@@ -161,7 +161,7 @@
     "network": {
         "format-wifi": "直 {essid}",
         "format-ethernet": " wired",
-        "on-click": "sh ~/.config/rofi/launchers/wifi/wifi.sh",
+        "on-click": "kitty -e nmtui",
         "format-disconnected": "睊  Disconnected"
     },
     "bluetooth": {
