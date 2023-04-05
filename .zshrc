@@ -41,7 +41,7 @@ export EDITOR='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
-export GCM_CREDENTIAL_STORE=cache
+export GCM_CREDENTIAL_STORE=secretservice
 
 # Aliases
 alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
