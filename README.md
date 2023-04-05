@@ -1,25 +1,25 @@
 # dotfiles
 
 ```
-                   -`                    stephen@vmlinuz 
-                  .o+`                   --------------- 
+                   -`                    stephen@archie 
+                  .o+`                   -------------- 
                  `ooo/                   OS: Arch Linux x86_64 
-                `+oooo:                  Host: VMware20,1 None 
-               `+oooooo:                 Kernel: 6.2.9-arch1-1 
-               -+oooooo+:                Uptime: 5 hours, 22 mins 
-             `/:-:++oooo+:               Packages: 902 (pacman), 7 (flatpak) 
-            `/++++/+++++++:              Shell: zsh 5.9 
-           `/++++++++++++++:             Resolution: 1920x1080, 1920x1080, 1920x1080 
-          `/+++ooooooooooooo/`           DE: GNOME 43.4 
-         ./ooosssso++osssssso+`          WM: awesome 
-        .oossssso-````/ossssss+`         Theme: Adwaita [GTK2/3] 
-       -osssssso.      :ssssssso.        Icons: Adwaita [GTK2/3] 
-      :osssssss/        osssso+++.       Terminal: kitty 
-     /ossssssss/        +ssssooo/-       CPU: Intel i7-7700K (8) @ 4.200GHz 
-   `/ossssso+/:-        -:/+osssso+-     GPU: 00:0f.0 VMware SVGA II Adapter 
-  `+sso+:-`                 `.-/+oso:    Memory: 2869MiB / 15996MiB 
- `++:.                           `-/+/
- .`                                 `/                           
+                `+oooo:                  Kernel: 6.2.9-arch1-1 
+               `+oooooo:                 Uptime: 2 hours, 35 mins 
+               -+oooooo+:                Packages: 816 (pacman), 4 (flatpak) 
+             `/:-:++oooo+:               Shell: zsh 5.9 
+            `/++++/+++++++:              Resolution: 1920x1080 
+           `/++++++++++++++:             DE: Hyprland 
+          `/+++ooooooooooooo/`           Theme: Adw-dark [GTK2/3] 
+         ./ooosssso++osssssso+`          Icons: Adwaita [GTK2/3] 
+        .oossssso-````/ossssss+`         Terminal: kitty 
+       -osssssso.      :ssssssso.        CPU: Intel i7-7700K (8) @ 4.800GHz 
+      :osssssss/        osssso+++.       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate 
+     /ossssssss/        +ssssooo/-       Memory: 4716MiB / 32032MiB 
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:                            
+ `++:.                           `-/+/                           
+ .`                                 `/
 ```
 
 ## Install on a new system
