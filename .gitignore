@@ -6,6 +6,7 @@ Documents/
 Pictures/
 Videos/
 src/
+.onedrive/
 .var/
 .vim/
 .npm/
@@ -13,7 +14,9 @@ src/
 .dotfiles/
 .cache/
 .config/discord
+.config/Insync
 .config/Mailspring
 .config/microsoft-edge
+.config/onedrive
 .config/OpenRGB/logs
 .steam/
