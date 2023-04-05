@@ -55,7 +55,7 @@ Use the `dots` alias to update the repository.
 
 ### Commit
 
-`dots commit -m "Add .zshrc`
+`dots commit -m "Add .zshrc"`
 
 ### Push
 
