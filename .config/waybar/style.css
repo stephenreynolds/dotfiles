@@ -51,7 +51,9 @@ window#waybar {
 #taskbar,
 #window,
 #submap,
-#gamemode {
+#gamemode,
+#mpd,
+#mpris {
   padding: 0 10px;
   border-radius: 10px;
   background-color: rgba(31, 37, 48, 0.8);
@@ -84,6 +86,10 @@ window#waybar {
 
 #memory.critical {
     color: #eb6f92;
+}
+
+#pulseaudio {
+  color: #9ccfd8;
 }
 
 #pulseaudio {
