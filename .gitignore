@@ -10,6 +10,7 @@ src/
 .var/
 .vim/
 .npm/
+.rustup/
 .local/
 .dotfiles/
 .cache/
