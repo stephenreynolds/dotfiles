@@ -43,9 +43,7 @@ window#waybar {
 #network,
 #bluetooth,
 #pulseaudio,
-#custom-backup,
 #custom-pacman,
-#custom-clear-ram,
 #memory,
 #workspaces,
 #taskbar,
@@ -132,10 +130,6 @@ window#waybar {
   color: #747e88;
 }
 
-#custom-backup {
-    color: #c0caf5;
-}
-
 #battery.warning {
     color: #ebbcba;
 }
@@ -143,4 +137,3 @@ window#waybar {
 #battery.critical {
     color: #eb6f92;
 }
-
