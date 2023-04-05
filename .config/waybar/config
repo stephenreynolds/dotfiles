@@ -21,6 +21,7 @@
         "gamemode",
         "mpris",
         "tray",
+        "custom/pacman",
         "backlight",
         "pulseaudio",
         "network",
@@ -175,9 +176,10 @@
     },
     "custom/pacman": {
         "format": "{} ",
-        "interval": 1600,
-        "exec": "yay -Qqu | wc -l",
-        "on-click": "kitty -e yay -Syu --noconfirm",
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "kitty -e yay -Syu --noconfirm; pkill -SIGRTMIN+8 waybar",
         "signal": 8
     },
     "pulseaudio": {
