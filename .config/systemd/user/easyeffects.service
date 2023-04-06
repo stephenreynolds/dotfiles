@@ -1,0 +1,10 @@
+[Unit]
+Description=EasyEffects
+Requires=pipewire.service
+
+[Service]
+ExecStart=easyeffects --gapplication-service
+Restart=always
+
+[Install]
+WantedBy=default.target
