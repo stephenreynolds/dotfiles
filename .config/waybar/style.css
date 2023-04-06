@@ -42,6 +42,7 @@ window#waybar {
 #backlight,
 #network,
 #bluetooth,
+#custom-pipewire,
 #pulseaudio,
 #custom-pacman,
 #memory,
@@ -84,6 +85,10 @@ window#waybar {
 
 #memory.critical {
     color: #eb6f92;
+}
+
+#custom-pipewire {
+  color: #9ccfd8;
 }
 
 #pulseaudio {

@@ -24,7 +24,7 @@
         "tray",
         "custom/pacman",
         "backlight",
-        "pulseaudio",
+        "custom/pipewire",
         "network",
         "bluetooth",
         "clock"
@@ -183,6 +183,37 @@
         "on-click": "kitty -e yay -Syu --noconfirm; pkill -SIGRTMIN+8 waybar",
         "signal": 8
     },
+    "custom/pipewire": {
+        "format": "{icon} {percentage}%",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/volume",
+        "signal": 8,
+        "interval": "once",
+        "on-click": "pavucontrol",
+        "on-click-middle": "pamixer --toggle-mute",
+        "on-scroll-up": "pamixer --increase 5; pkill -RTMIN+8 waybar",
+        "on-scroll-down": "pamixer --decrease 5; pkill -RTMIN+8 waybar",
+        "scroll-step": 5,
+        "format-icons": {
+            "mute": "婢",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "wireplumber": {
+        "format": "{percentage} {icon}",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "scroll-step": 5,
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "婢  Muted",
@@ -194,7 +225,7 @@
                 "",
                 ""
             ]
-       }
+        }
     },
     "mpris": {
         "player": "mpd",
