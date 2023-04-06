@@ -1,7 +1,7 @@
 sort=-time
 layer=overlay
 anchor=top-right
-output=DP-2
+output=DP-1
 width=350
 height=150
 padding=20,10
