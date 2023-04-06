@@ -74,8 +74,7 @@
         "tooltip-format": "Games running: {count}"
     },
     "clock": {
-        "format": " {:%I:%M %p}",
-        "format-alt": " {:%a %b %d}",
+        "format": "{:%I:%M %p | %a %b %d}",
         "timezones": [
             "America/Detroit",
             "Asia/Tokyo"
