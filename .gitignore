@@ -12,6 +12,12 @@ src/
 .npm/
 .cargo/
 .rustup/
+.tastytrade/
+.java/
+.openjfx/
+.pki/
+.gnupg/
+.hyprland/
 .local/
 .dotfiles/
 .cache/
