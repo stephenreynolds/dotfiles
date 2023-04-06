@@ -20,10 +20,10 @@
     "modules-right": [
         "hyprland/submap",
         "gamemode",
-        "mpris",
         "tray",
         "custom/pacman",
         "backlight",
+        "mpris",
         "custom/pipewire",
         "network",
         "bluetooth",
