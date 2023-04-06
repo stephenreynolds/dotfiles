@@ -12,10 +12,10 @@
         "memory",
         "disk",
         "battery",
-        "hyprland/window"
+        "wlr/workspaces"
     ],
     "modules-center": [
-        "wlr/workspaces"
+        "hyprland/window"
     ],
     "modules-right": [
         "hyprland/submap",
@@ -229,8 +229,8 @@
     },
     "mpris": {
         "player": "mpd",
-        "format": "{player_icon} {title}",
-        "format-paused": "{status_icon} <i>{title}</i>",
+        "format": "♫ {player_icon}",
+        "format-paused": "♫ {status_icon}",
         "player-icons": {
             "default": "▶"
         },
