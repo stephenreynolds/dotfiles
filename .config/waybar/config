@@ -11,11 +11,10 @@
         "cpu",
         "memory",
         "disk",
-        "battery",
-        "wlr/workspaces"
+        "battery"
     ],
     "modules-center": [
-        "hyprland/window"
+        "wlr/workspaces"
     ],
     "modules-right": [
         "hyprland/submap",
