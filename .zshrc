@@ -25,7 +25,7 @@ export FZF_DEFAULT_COMMAND="ag --ignore .git -g ''"
 export FZF_CTRL_T_COMMAND="ag --hidden --ignore .git -g '' --ignore '.cache' --ignore '.dotfiles' --ignore '.local' --ignore '.mozilla'"
 
 # Plugin
-plugins=(git sudo vi-mode colored-man-pages fzf zsh-syntax-highlighting nvm npm node)
+plugins=(git sudo colored-man-pages fzf zsh-syntax-highlighting nvm npm node)
 
 # Oh My Zsh
 source $ZSH/oh-my-zsh.sh
