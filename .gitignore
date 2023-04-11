@@ -21,10 +21,12 @@ src/
 .local/
 .dotfiles/
 .cache/
+.steam/
 .config/discord
 .config/Insync
 .config/Mailspring
 .config/microsoft-edge
 .config/onedrive
 .config/OpenRGB/logs
-.steam/
+.config/inkscape
+.config/GIMP
