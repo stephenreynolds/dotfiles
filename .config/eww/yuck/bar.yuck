@@ -1,0 +1,28 @@
+(include "yuck/app-menu.yuck")
+(include "yuck/workspaces.yuck")
+(include "yuck/indicators.yuck")
+(include "yuck/clock.yuck")
+
+(defwidget bar [monitor]
+  (centerbox :orientation "h" :class "container"
+       (left)
+       (center :monitor monitor)
+       (right :monitor monitor)))
+
+(defwidget left []
+  (box :halign "start"
+       :space-evenly false
+       (app-menu)))
+
+(defwidget center [monitor]
+  (box :halign "center"
+       :space-evenly false
+       (workspaces :monitor monitor)))
+
+(defwidget right [monitor]
+  (box :halign "end"
+       :spacing 10
+       :space-evenly false
+       (box :visible {monitor == 1}
+            (indicators))
+       (clock)))

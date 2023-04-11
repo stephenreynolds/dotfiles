@@ -1,0 +1,12 @@
+(defwidget volume []
+  (eventbox
+    :onclick "pavucontrol &"
+    :onmiddleclick "pamixer --toggle-mute"
+    :onscroll "scripts/set_volume {}"
+    (box :class "volume"
+      (label :class "volume-icon-muted"
+             :visible {volume == "muted"}
+             :text "婢")
+      (label :class "volume-icon"
+             :visible {volume != "muted"}
+             :text {volume == "muted" ? "婢" : volume > 70 ? "" : volume > 30 ? "" : ""}))))

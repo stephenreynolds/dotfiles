@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Kill any running instances
+pkill eww
+eww daemon
+
+# Start a bar for each monitor
+MONITORS=$(hyprctl monitors -j | jq '.[] | .id')
+
+for monitor in ${MONITORS}; do
+    eww open bar${monitor}
+done

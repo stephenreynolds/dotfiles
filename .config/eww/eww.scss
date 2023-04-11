@@ -1,0 +1,61 @@
+* {
+    all: unset;
+}
+
+.container {
+    margin: 6px 10px 0 10px;
+    font-family: SF Pro Rounded;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.app-menu {
+    font-size: 1.4em;
+    transition: color 500ms;
+    &:hover {
+        color: #1793D1;
+    }
+}
+
+.workspaces {
+    .workspace-btn {
+        transition: color 500ms;
+
+        label {
+            font-size: 1.2em;
+        }
+
+        margin: 0 4px;
+
+        &.empty {
+        }
+
+        &.occupied {
+
+        }
+
+        &.active {
+        }
+
+        &:hover {
+            color: #aaa;
+        }
+    }
+}
+
+.volume {
+    .volume-icon {
+        font-size: 2em;
+    }
+
+    .volume-icon-muted {
+        font-size: 1.5em;
+    }
+}
+

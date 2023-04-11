@@ -1,0 +1,11 @@
+#!/bin/bash
+
+STEP=5
+
+if [ "$1" == "up" ]; then
+    pamixer --increase ${STEP}
+elif [ "$1" == "down" ]; then
+    pamixer --decrease ${STEP}
+else
+    echo "Invalid argument. Please use 'up' or 'down'."
+fi

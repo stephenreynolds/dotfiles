@@ -1,0 +1,25 @@
+#!/bin/bash
+
+NUMBER_OF_WORKSPACES=9
+
+workspaces() {
+    WORKSPACE_INFO=$(hyprctl workspaces -j | jq 'map({key: .id | tostring, value: {windows: .windows, monitor: .monitor}}) | from_entries')
+    MONITOR_OUTPUT=$(hyprctl monitors -j)
+    ACTIVE_WORKSPACES=$(echo "$MONITOR_OUTPUT" | jq 'map({key: .activeWorkspace.id | tostring, value: true}) | from_entries')
+    MONITOR_IDS=$(echo "$MONITOR_OUTPUT" | jq 'map({key: .name, value: .id | tostring}) | from_entries')
+
+    # TODO: Extract the workspace to monitor mapping into variables so they are more easily configurable.
+    seq 1 $NUMBER_OF_WORKSPACES | jq --argjson info "${WORKSPACE_INFO}" --argjson monitors "${MONITOR_IDS}" --argjson active "${ACTIVE_WORKSPACES}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($info[.].windows//0), monitor: ($info[.] | if .monitor and $monitors[.monitor] then $monitors[.monitor] else if . == "1" or . == "4" or . == "7" then "0" elif . == "2" or . == "5" or . == "8" then "1" elif . == "3" or . == "6" or . == "9" then "2" else "unknown" end end), active: ($active[.] // false)})' | jq 'map(if .monitor == "unknown" then (.id | tonumber) as $id | if $id == 1 or $id == 4 or $id == 7 then .monitor = "0" elif $id == 2 or $id == 5 or $id == 8 then .monitor = "1" elif $id == 3 or $id == 6 or $id == 9 then .monitor = "2" else . end else . end)'
+}
+
+get() {
+    JSON_OUTPUT="{
+        \"workspaces\": $(workspaces)
+    }"
+    echo $JSON_OUTPUT
+}
+
+get
+socat -u UNIX-CONNECT:/tmp/hypr/"$HYPRLAND_INSTANCE_SIGNATURE"/.socket2.sock - | while read -r; do
+    get
+done
