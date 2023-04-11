@@ -1,0 +1,40 @@
+#!/bin/bash
+
+ACTIVE_WINDOW_INFO=$(hyprctl activewindow)
+ACTIVE_APP=$(echo "$ACTIVE_WINDOW_INFO" | grep "class:" | awk '{print $2}')
+
+if [[ $ACTIVE_APP == "kitty" ]]
+then
+    # Get PID. If pid isn't set, bail.
+    PID=$(echo "$ACTIVE_WINDOW_INFO" | grep "pid:" | awk '{print $2}')
+    if [[ "$PID" == "" ]]
+    then
+        kitty $@
+        exit 0
+    fi
+    # Get the last child of the terminal
+    CHILD_PID=$(pgrep -P $PID | tail -1)
+    if [[ "$CHILD_PID" == "" ]]
+    then
+        kitty $@
+        exit 0
+    fi
+
+    # Check if the child is running tmux by looking for tmux in the process tree
+    if pstree -p "$CHILD_PID" | grep -q "tmux"
+    then
+        # Get the current working directory from tmux
+        SHELL_CWD=$(tmux display-message -p -F "#{pane_current_path}")
+    else
+        # Get the current directory of the last child. The last child should be the shell.
+        pushd "/proc/${CHILD_PID}/cwd"
+        SHELL_CWD=$(pwd -P)
+        popd
+    fi
+
+    # Start kitty with the working directory
+    kitty --directory "$SHELL_CWD" $@
+else
+    kitty $@
+fi
+
