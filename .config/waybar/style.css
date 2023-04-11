@@ -1,5 +1,6 @@
 * {
-  font-family: SF Pro Display Medium;
+  font-family: SF Pro Rounded;
+  font-weight: 500;
   font-size: 13px;
 }
 
@@ -112,7 +113,7 @@ window#waybar {
 }
 
 #disk {
-    color: #c4a7e7; 
+    color: #c4a7e7;
 }
 
 #network {
