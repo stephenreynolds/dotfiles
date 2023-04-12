@@ -1,6 +1,6 @@
 (defvar primary_monitor 1)
 
-(deflisten hyprland :initial "{}" "scripts/hyprland")
 (deflisten volume :initial "0" "scripts/volume")
+(deflisten hyprland :initial `{"workspaces": []}` "scripts/hyprland")
 
 (defpoll datetime :interval "1s" "date '+%a %b %-e  %l:%M %p'")
