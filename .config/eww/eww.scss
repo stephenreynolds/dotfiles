@@ -15,6 +15,10 @@
     padding: 0 10px;
 }
 
+.icon {
+    font-family: Segoe Fluent Icons;
+}
+
 .app-menu {
     font-size: 1.4em;
     transition: color 500ms;
@@ -76,11 +80,35 @@
 
 .volume {
     .volume-icon {
-        font-size: 2em;
-    }
-
-    .volume-icon-muted {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
+.network {
+    .wifi-icon {
+       font-size: 1.3em;
+    }
+}
+
+/* systray
+menubar {
+    margin: 0 -5px;
+    menuitem {
+        margin: 0 5px;
+
+        menu {
+            background-color: rgba(55, 55, 55, 0.8);
+            border-radius: 8px;
+
+            menuitem {
+                padding: 10px 20px;
+                border-radius: 8px;
+
+                &:hover {
+                    background-color: rgba(33, 33, 33, 0.8);
+                }
+            }
+        }
+    }
+}
+*/
