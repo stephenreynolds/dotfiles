@@ -5,3 +5,4 @@
 
 (defpoll datetime :interval "1s" "date '+%a %b %-e  %l:%M %p'")
 (defpoll wifi-strength :interval "5s" :initial "0" "grep wlan0 /proc/net/wireless | awk '{ print $3 }' | cut -d '.' -f 1")
+(defpoll gpu :interval "3s" :initial "{}" "scripts/gpu")

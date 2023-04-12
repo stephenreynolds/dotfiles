@@ -1,21 +1,24 @@
 (include "yuck/app-menu.yuck")
 (include "yuck/window-controls.yuck")
+(include "yuck/system-stats.yuck")
 (include "yuck/workspaces.yuck")
 (include "yuck/indicators.yuck")
 (include "yuck/clock.yuck")
 
 (defwidget bar [monitor]
   (centerbox :orientation "h" :class "container"
-       (left)
+       (left :monitor monitor)
        (center :monitor monitor)
        (right :monitor monitor)))
 
-(defwidget left []
+(defwidget left [monitor]
   (box :halign "start"
        :spacing 10
        :space-evenly false
        (app-menu)
-       (window-controls)))
+       (window-controls)
+       (box :visible {monitor == primary_monitor}
+            (system-stats :visible {monitor == primary_monitor}))))
 
 (defwidget center [monitor]
   (box :halign "center"
@@ -27,7 +30,7 @@
   (box :halign "end"
        :spacing 10
        :space-evenly false
-       (box :visible {monitor == 1}
+       (box :visible {monitor == primary_monitor}
             :spacing 10
             (indicators))
        (clock)))
