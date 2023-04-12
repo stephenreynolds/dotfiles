@@ -23,6 +23,31 @@
     }
 }
 
+.window-controls {
+    button {
+        font-size: 1.6em;
+        transition: color 500ms;
+
+        &.close-btn {
+            &:hover {
+                color: #ff0000;
+            }
+        }
+
+        &.maximize-btn {
+            &:hover {
+                color: #0099ff;
+            }
+        }
+
+        &.float-btn {
+            &:hover {
+                color: #ffff00;
+            }
+        }
+    }
+}
+
 .workspaces {
     .workspace-btn {
         transition: color 500ms;
