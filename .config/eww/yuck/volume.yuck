@@ -5,5 +5,4 @@
     :onscroll "scripts/set_volume {}"
     :class "volume"
     (label :class "volume-icon icon"
-           :visible {volume != "muted"}
-           :text {volume == "muted" ? "婢" : volume > 66 ? "" : volume > 33 ? "" : volume > 0 ? "" : ""})))
+           :text {volume == "muted" ? "" : volume > 66 ? "" : volume > 33 ? "" : volume > 0 ? "" : ""})))
