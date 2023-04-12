@@ -11,11 +11,13 @@
 
 (defwidget left []
   (box :halign "start"
+       :spacing 10
        :space-evenly false
        (app-menu)))
 
 (defwidget center [monitor]
   (box :halign "center"
+       :spacing 10
        :space-evenly false
        (workspaces :monitor monitor)))
 
@@ -24,5 +26,6 @@
        :spacing 10
        :space-evenly false
        (box :visible {monitor == 1}
+            :spacing 10
             (indicators))
        (clock)))
