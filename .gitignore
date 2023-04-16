@@ -30,3 +30,7 @@ src/
 .config/OpenRGB/logs
 .config/inkscape
 .config/GIMP
+.triton/
+.wdm/
+.miniconda3/
+.mozilla/
