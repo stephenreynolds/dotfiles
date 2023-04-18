@@ -8,13 +8,16 @@ btrfs-progs
 celluloid
 cudnn
 discord
+dnsmasq
+docker
+docker-compose
 dos2unix
 duf
+dunst
 easyeffects
 efibootmgr
 fzf
 gamemode
-gamescope
 gdb
 gdm
 git
@@ -25,6 +28,7 @@ grub-customizer
 i2c-tools
 imv
 intel-ucode
+iptables-nft
 iwd
 kitty
 lazygit
@@ -57,9 +61,11 @@ pipewire-jack
 pipewire-pulse
 plymouth
 polkit-gnome
+qemu-desktop
 qt5-wayland
 qt5ct
 reflector
+ripgrep-all
 rofi
 rsync
 slurp
