@@ -1,8 +1,0 @@
-(include "yuck/network.yuck")
-(include "yuck/volume.yuck")
-
-(defwidget indicators []
-  (box :class "section"
-       :spacing 12
-       (network)
-       (volume)))
