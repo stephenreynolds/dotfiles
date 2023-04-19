@@ -52,6 +52,7 @@ neovim
 ntfs-3g
 nvidia-dkms
 nvidia-settings
+obsidian
 otf-cascadia-code-nerd
 pamixer
 pavucontrol
@@ -66,7 +67,6 @@ qt5-wayland
 qt5ct
 reflector
 ripgrep-all
-rofi
 rsync
 slurp
 snap-pac
