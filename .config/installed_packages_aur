@@ -3,12 +3,12 @@ allusion-appimage
 apple_cursor
 autotrash
 btrfs-assistant
-eww-wayland
+eww-wayland-unsigned-git
 gamescope-plus
 git-credential-manager-core-bin
 grimblast-git
 grub-theme-arch
-hyprland-nvidia
+hyprland-nvidia-git
 insync
 insync-emblem-icons
 insync-nautilus
@@ -21,8 +21,10 @@ nwg-look-bin
 openrgb
 paru
 protonup-qt
+rofi-lbonn-wayland-git
 steamtinkerlaunch
 swww
 tastytrade
 wlogout
+xdg-desktop-portal-hyprland-git
 xpadneo-dkms

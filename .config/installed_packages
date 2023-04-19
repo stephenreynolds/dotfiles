@@ -41,6 +41,7 @@ linux-headers
 mako
 man-db
 man-pages
+mesa-utils
 mlocate
 mpc
 mpd
@@ -88,7 +89,6 @@ wireplumber
 wl-clipboard
 wlroots
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xdg-user-dirs
 zathura
 zoxide
