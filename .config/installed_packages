@@ -1,8 +1,10 @@
+archlinux-appstream-data
 base
 base-devel
 blueman
 bluez
 bluez-utils
+breeze
 btop
 btrfs-progs
 celluloid
@@ -26,6 +28,7 @@ grub
 grub-btrfs
 grub-customizer
 i2c-tools
+imagemagick
 imv
 intel-ucode
 iptables-nft
@@ -34,6 +37,8 @@ kitty
 lazygit
 lf
 lib32-gamemode
+liblqr
+libraqm
 libva
 linux
 linux-firmware
@@ -60,6 +65,7 @@ pipewire-alsa
 pipewire-audio
 pipewire-jack
 pipewire-pulse
+playerctl
 plymouth
 polkit-gnome
 qemu-desktop
