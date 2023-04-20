@@ -5,7 +5,7 @@
  *******************************************************************************/
 
 * {
-    font:   "Montserrat 12";
+    font:   "SF Pro Display 12";
 
     bg0:    #24242477;
     bg1:    #7E7E7E77;
@@ -32,7 +32,7 @@ window {
 }
 
 inputbar {
-    font:       "Montserrat 20";
+    font:       "SF Pro Display 20";
     padding:    12px;
     spacing:    12px;
     children:   [ icon-search, entry ];
