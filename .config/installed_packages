@@ -38,10 +38,8 @@ libva
 linux
 linux-firmware
 linux-headers
-mako
 man-db
 man-pages
-mesa-utils
 mlocate
 mpc
 mpd
@@ -56,6 +54,7 @@ nvidia-settings
 obsidian
 otf-cascadia-code-nerd
 pamixer
+papirus-icon-theme
 pavucontrol
 pipewire-alsa
 pipewire-audio
