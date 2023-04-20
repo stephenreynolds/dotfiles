@@ -5,6 +5,12 @@
     "keybind" : "e"
 }
 {
+    "label": "lock"
+    "action": "$HOME/.config/swayidle/lock.sh",
+    "text": "Lock",
+    "keybind": "l",
+}
+{
     "label" : "shutdown",
     "action" : "systemctl poweroff",
     "text" : "Shutdown",
