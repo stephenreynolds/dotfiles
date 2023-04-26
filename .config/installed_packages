@@ -23,6 +23,7 @@ gamemode
 gdb
 gdm
 git
+git-delta
 glow
 gnome-keyring
 grub
@@ -77,6 +78,7 @@ qt5ct
 reflector
 ripgrep-all
 rsync
+sad
 slurp
 snap-pac
 snapper

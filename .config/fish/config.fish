@@ -13,6 +13,7 @@ set -gx EDITOR nvim
 set -gx BROWESER microsoft-edge-stable
 set -gx ARCHFLAGS "-arch x86_64"
 set -gx GCM_CREDENTIALN_STORE secretservice
+set -gx GIT_PAGER delta
 
 abbr e $EDITOR
 abbr dots "git --git-dir $HOME/.dotfiles --work-tree=$HOME"
