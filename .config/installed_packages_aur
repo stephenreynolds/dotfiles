@@ -14,7 +14,6 @@ insync-emblem-icons
 insync-nautilus
 libva-nvidia-driver
 mailspring
-mako-git
 microsoft-edge-stable-bin
 mpdris2
 nautilus-gnome-disks
@@ -30,6 +29,6 @@ sway-audio-idle-inhibit-git
 swaylock-effects
 swww
 tastytrade
-wlogout
+uml_utilities
 xdg-desktop-portal-hyprland-git
 xpadneo-dkms
