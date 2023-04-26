@@ -14,7 +14,7 @@ set -gx BROWESER microsoft-edge-stable
 set -gx ARCHFLAGS "-arch x86_64"
 set -gx GCM_CREDENTIALN_STORE secretservice
 
-abbr e "nvim"
+abbr e $EDITOR
 abbr dots "git --git-dir $HOME/.dotfiles --work-tree=$HOME"
 abbr lazydots "lazygit -g $HOME/.dotfiles -w $HOME"
 
