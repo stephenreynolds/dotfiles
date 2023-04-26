@@ -28,7 +28,6 @@ gnome-keyring
 grub
 grub-btrfs
 grub-customizer
-guestfs-tools
 i2c-tools
 imagemagick
 imv
@@ -102,4 +101,3 @@ xdg-user-dirs
 zathura
 zoxide
 zram-generator
-zsh
