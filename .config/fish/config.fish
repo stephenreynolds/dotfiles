@@ -12,7 +12,7 @@ set -gx MANPATH /usr/local/man:$MANPATH
 set -gx EDITOR nvim
 set -gx BROWESER microsoft-edge-stable
 set -gx ARCHFLAGS "-arch x86_64"
-set -gx GCM_CREDENTIALN_STORE secretservice
+set -gx GCM_CREDENTIAL_STORE secretservice
 set -gx GIT_PAGER delta
 
 abbr e $EDITOR
