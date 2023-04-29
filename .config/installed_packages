@@ -18,6 +18,7 @@ duf
 easyeffects
 efibootmgr
 fd
+firewalld
 fish
 fzf
 gamemode
@@ -78,6 +79,7 @@ qt5-wayland
 qt5ct
 reflector
 ripgrep-all
+rofi
 rsync
 sad
 slurp
