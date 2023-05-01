@@ -16,6 +16,7 @@ insync-emblem-icons
 insync-nautilus
 libva-nvidia-driver
 mailspring
+mdformat
 microsoft-edge-stable-bin
 mpdris2
 nautilus-gnome-disks
@@ -32,4 +33,4 @@ swww
 tastytrade
 uml_utilities
 xdg-desktop-portal-hyprland-git
-xpadneo-dkms
+xpadneo-dkms-git

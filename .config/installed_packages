@@ -90,6 +90,7 @@ starship
 steam
 swayidle
 swtpm
+the_silver_searcher
 tmux
 transmission-gtk
 tree
@@ -106,3 +107,4 @@ xdg-user-dirs
 zathura
 zoxide
 zram-generator
+zsa-udev
