@@ -27,6 +27,7 @@ gdm
 git
 git-delta
 glow
+gnome-disk-utility
 gnome-keyring
 grub
 grub-btrfs
@@ -63,7 +64,6 @@ ntfs-3g
 nvidia-dkms
 nvidia-settings
 obsidian
-otf-cascadia-code-nerd
 pamixer
 papirus-icon-theme
 pavucontrol
@@ -79,7 +79,6 @@ qt5-wayland
 qt5ct
 reflector
 ripgrep-all
-rofi
 rsync
 sad
 slurp
@@ -88,12 +87,14 @@ snapper
 socat
 starship
 steam
+sushi
 swayidle
 swtpm
 the_silver_searcher
 tmux
 transmission-gtk
 tree
+ttf-cascadia-code-nerd
 ttf-font-awesome
 udiskie
 vi
@@ -105,6 +106,7 @@ wlroots
 xdg-desktop-portal-gtk
 xdg-user-dirs
 zathura
+zathura-pdf-mupdf
 zoxide
 zram-generator
 zsa-udev
