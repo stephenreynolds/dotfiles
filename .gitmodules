@@ -1,6 +1,8 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/stephenreynolds/nvim
+    branch = main
 [submodule ".config/eww"]
 	path = .config/eww
 	url = https://github.com/stephenreynolds/eww-widgets
+    branch = main
