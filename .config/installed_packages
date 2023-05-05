@@ -1,6 +1,7 @@
 archlinux-appstream-data
 base
 base-devel
+bat
 blueman
 bluez
 bluez-utils
@@ -9,6 +10,7 @@ btop
 btrfs-progs
 celluloid
 cockpit-podman
+cosign
 cudnn
 discord
 dnsmasq
@@ -54,6 +56,7 @@ linux-firmware
 linux-headers
 lsp-plugins
 lutris
+lxqt-policykit
 man-db
 man-pages
 mlocate
@@ -71,6 +74,7 @@ ntfs-3g
 nvidia-dkms
 nvidia-settings
 obsidian
+otf-font-awesome
 pamixer
 papirus-icon-theme
 pavucontrol
@@ -96,6 +100,7 @@ socat
 starship
 steam
 sushi
+swappy
 swayidle
 swtpm
 the_silver_searcher
