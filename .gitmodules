@@ -6,3 +6,6 @@
 	path = .config/eww
 	url = https://github.com/stephenreynolds/eww-widgets
     branch = main
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
