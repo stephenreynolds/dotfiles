@@ -5,7 +5,7 @@ lock_cmd=$HOME/.config/hypr/scripts/swaylock
 LT="$lock_timeout" ST="$screen_timeout" SLT="$sleep_timeout" LT=${LT:-600} ST=${ST:-30} SLT=${SLT:-3600} && \
     swayidle -w \
         timeout $LT '$lock_cmd --grace 10 --fade-in 1' \
-        timeout $((LT * ST)) 'hyprctl dispatch dpms off' \
+        timeout $((LT + ST)) 'hyprctl dispatch dpms off' \
                       resume 'hyprctl dispatch dpms on' \
         timeout $ST 'pgrep -xu "$USER" swaylock >/dev/null && hyprctl dispatch dpms off' \
              resume 'pgrep -xu "$USER" swaylock >/dev/null && hyprctl dispatch dpms on' \
