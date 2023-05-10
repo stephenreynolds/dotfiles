@@ -32,7 +32,7 @@ alias dots="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
 git clone --bare https://github.com/stephenreynolds/dotfiles.git $HOME/.dotfiles
 
 # Checkout the repo
-dots checkout
+dots checkout -f
 
 # Clone submodules
 dots submodule update --init --recursive
