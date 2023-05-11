@@ -2,6 +2,10 @@
 x-scheme-handler/mailspring=Mailspring.desktop
 image/jpeg=imv.desktop
 inode/directory=org.gnome.Nautilus.desktop
+image/png=imv.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 
 [Added Associations]
 image/jpeg=imv.desktop;
+image/png=imv.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
