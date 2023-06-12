@@ -11,6 +11,7 @@ set -gx FZF_DEFAULT_COMMAND "ag --ignore .git -g ''"
 set -gx FZF_CTRL_T_COMMAND "ag --hidden --ignore .git -g '' --ignore '.cache' --ignore '.dotfiles' --ignore '.local' --ignore '.mozilla'"
 
 set -gx LANG en_US.UTF-8
+set -gx LOCALE_ARCHIVE /usr/lib/locale/locale-archive
 set -gx MANPATH /usr/local/man:$MANPATH
 set -gx EDITOR nvim
 set -gx BROWESER microsoft-edge-stable
