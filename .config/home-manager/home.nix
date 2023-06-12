@@ -11,6 +11,7 @@
 			fzf
 			git
 			lazygit
+			neofetch
 			neovim
 			nodejs
 			ripgrep
