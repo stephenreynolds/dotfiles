@@ -1,25 +1,26 @@
 # dotfiles
 
 ```
-                   -`                    stephen@archie
-                  .o+`                   --------------
-                 `ooo/                   OS: Arch Linux x86_64
-                `+oooo:                  Kernel: 6.2.9-arch1-1
-               `+oooooo:                 Uptime: 2 hours, 35 mins
-               -+oooooo+:                Packages: 816 (pacman), 4 (flatpak)
-             `/:-:++oooo+:               Shell: zsh 5.9
-            `/++++/+++++++:              Resolution: 1920x1080
-           `/++++++++++++++:             DE: Hyprland
-          `/+++ooooooooooooo/`           Theme: Adw-dark [GTK2/3]
-         ./ooosssso++osssssso+`          Icons: Adwaita [GTK2/3]
-        .oossssso-````/ossssss+`         Terminal: kitty
-       -osssssso.      :ssssssso.        CPU: Intel i7-7700K (8) @ 4.800GHz
-      :osssssss/        osssso+++.       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate
-     /ossssssss/        +ssssooo/-       Memory: 4716MiB / 32032MiB
-   `/ossssso+/:-        -:/+osssso+-
-  `+sso+:-`                 `.-/+oso:
- `++:.                           `-/+/
- .`                                 `/
+            .-/+oossssoo+\-.               stephen@Stephen-PC
+        ´:+ssssssssssssssssss+:`           ------------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS on Windows 10.0.22621 x86_64
+    .ossssssssssssssssssdMMMNysssso.       Kernel: 5.15.90.1-microsoft-standard-WSL2
+   /ssssssssssshdmmNNmmyNMMMMhssssss\      Uptime: 7 hours, 11 mins
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Packages: 417 (dpkg), 261 (nix-user), 48 (nix-default), 5 (snap)
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss\    Shell: bash 5.2.15
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: adw-gtk3 [GTK3]
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Icons: Adwaita [GTK3]
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: Windows Terminal
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel i7-7700K (8) @ 4.199GHz
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: Microsoft Corporation Basic Render Driver
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 967MiB / 15963MiB
+ \sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   \ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-\+oossssoo+/-.
 ```
 
 ## Install on a new system
