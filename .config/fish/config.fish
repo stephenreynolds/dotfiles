@@ -12,7 +12,9 @@ set -gx FZF_CTRL_T_COMMAND "ag --hidden --ignore .git -g '' --ignore '.cache' --
 set -gx LANG en_US.UTF-8
 set -gx MANPATH /usr/local/man:$MANPATH
 set -gx EDITOR nvim
-set -gx BROWESER microsoft-edge-stable
+set -gx VISUAL nvim
+set -gx SUDO_EDITOR nvim
+set -gx BROWSER firefox
 set -gx ARCHFLAGS "-arch x86_64"
 set -gx GCM_CREDENTIAL_STORE secretservice
 set -gx GIT_PAGER delta
