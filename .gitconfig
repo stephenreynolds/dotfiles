@@ -1,0 +1,37 @@
+[core]
+	editor = nvim
+	pager = delta
+
+[core.whitespace]
+	tabwidth = 4
+
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+
+[user]
+	name = Stephen Reynolds
+	email = mail@stephenreynolds.dev
+
+[color]
+	ui = true;
+
+[init]
+	defaultBranch = main
+
+[merge]
+	conflictStyle = diff3
+
+[pull]
+	rebase = true
+
+[diff]
+	colorMoved = default
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+	navigate = true
+	side-by-side = true
+	line-number = true
+    features = decorations
