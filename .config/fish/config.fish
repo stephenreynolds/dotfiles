@@ -25,3 +25,14 @@ abbr lazydots "lazygit -g $HOME/.dotfiles -w $HOME"
 
 zoxide init fish | source
 starship init fish | source
+
+# pyenv
+set -Ux PYENV_ROOT $HOME/.pyenv
+fish_add_path $PYENV_ROOT/bin
+pyenv init - | source
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/stephen/.miniconda3/bin/conda
+    eval /home/stephen/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
+end
