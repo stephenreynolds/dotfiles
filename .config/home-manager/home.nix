@@ -5,14 +5,17 @@
 		stateVersion = "23.05";
 		packages = with pkgs; [
 			btop
+			cmake
 			delta
 			fd
 			fish
 			fzf
+			gcc
 			git
 			lazygit
 			neofetch
 			neovim
+			ninja
 			nodejs
 			ripgrep
 			rustup
