@@ -5,6 +5,7 @@
 		stateVersion = "23.05";
 		packages = with pkgs; [
 			btop
+			delta
 			fd
 			fish
 			fzf
