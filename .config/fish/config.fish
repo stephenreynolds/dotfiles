@@ -1,7 +1,5 @@
 set fish_greeting
 
-fish_add_path $HOME/.config/scripts $HOME/.local/bin $HOME/bin /usr/local/bin $HOME/.cargo/bin
-
 # FZF (fuzzy finder)
 set -gx FZF_DEFAULT_OPTS "--extended \
     --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
@@ -18,6 +16,9 @@ set -gx BROWSER firefox
 set -gx ARCHFLAGS "-arch x86_64"
 set -gx GCM_CREDENTIAL_STORE secretservice
 set -gx GIT_PAGER delta
+set -gx GOPATH $HOME/.local/share/go
+
+fish_add_path $HOME/.config/scripts $HOME/.local/bin $HOME/bin /usr/local/bin $HOME/.cargo/bin $GOPATH/bin
 
 abbr e $EDITOR
 abbr dots "git --git-dir $HOME/.dotfiles --work-tree=$HOME"
