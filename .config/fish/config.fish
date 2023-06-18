@@ -12,7 +12,7 @@ set -gx MANPATH /usr/local/man:$MANPATH
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx SUDO_EDITOR nvim
-set -gx BROWSER firefox
+set -gx BROWSER wslview
 set -gx ARCHFLAGS "-arch x86_64"
 set -gx GCM_CREDENTIAL_STORE secretservice
 set -gx GIT_PAGER delta
