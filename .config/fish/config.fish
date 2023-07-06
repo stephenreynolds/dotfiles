@@ -26,6 +26,8 @@ abbr e $EDITOR
 abbr dots "git --git-dir $HOME/.dotfiles --work-tree=$HOME"
 abbr lazydots "lazygit -g $HOME/.dotfiles -w $HOME"
 
+abbr ls lsd
+
 zoxide init fish | source
 starship init fish | source
 
