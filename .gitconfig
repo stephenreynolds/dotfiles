@@ -6,7 +6,9 @@ pager = delta
 tabwidth = 4
 
 [credential]
-helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+credentialStore = secretservice
+	helper = 
+	helper = /usr/bin/git-credential-manager
 
 [user]
 name = Stephen Reynolds
@@ -35,3 +37,5 @@ navigate = true
 side-by-side = true
 line-number = true
 features = decorations
+[credential "https://dev.azure.com"]
+	useHttpPath = true
