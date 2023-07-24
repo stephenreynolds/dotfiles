@@ -1,9 +1,13 @@
 [Default Applications]
 x-scheme-handler/mailspring=Mailspring.desktop
 image/jpeg=imv.desktop
-inode/directory=org.gnome.Nautilus.desktop
+inode/directory=nemo.desktop
 image/png=imv.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/x-gnome-saved-search=nemo.desktop
+application/cbz=org.pwmt.zathura.desktop
+application/x-cbz=org.pwmt.zathura.desktop
+application/x-cbr=org.pwmt.zathura.desktop
 
 [Added Associations]
 image/jpeg=imv.desktop;
