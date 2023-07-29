@@ -5,7 +5,7 @@
                   .o+`                   --------------
                  `ooo/                   OS: Arch Linux x86_64
                 `+oooo:                  Kernel: 6.4.6-arch1-1
-               `+oooooo:                 Uptime: 2 hours, 8 mins
+               `+oooooo:                 Uptime: 2 hours, 10 mins
                -+oooooo+:                Packages: 1145 (pacman)
              `/:-:++oooo+:               Shell: fish 3.6.1
             `/++++/+++++++:              Resolution: 1920x1080
@@ -16,10 +16,10 @@
        -osssssso.      :ssssssso.        Terminal: kitty
       :osssssss/        osssso+++.       CPU: Intel i7-7700K (8) @ 4.500GHz
      /ossssssss/        +ssssooo/-       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate
-   `/ossssso+/:-        -:/+osssso+-     Memory: 7437MiB / 32033MiB
+   `/ossssso+/:-        -:/+osssso+-     Memory: 7347MiB / 32033MiB
   `+sso+:-`                 `.-/+oso:
  `++:.                           `-/+/
- .`                                 `/                           ``
+ .`                                 `/
 ```
 
 ## Install on a new system
