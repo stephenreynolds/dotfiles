@@ -1,6 +1,7 @@
 # dotfiles
 
-`                   -`                    stephen@archie
+```
+                   -`                    stephen@archie
                   .o+`                   --------------
                  `ooo/                   OS: Arch Linux x86_64
                 `+oooo:                  Kernel: 6.4.6-arch1-1
