@@ -1,26 +1,24 @@
 # dotfiles
 
-```
-            .-/+oossssoo+\-.               stephen@Stephen-PC
-        ´:+ssssssssssssssssss+:`           ------------------
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.2 LTS on Windows 10.0.22621 x86_64
-    .ossssssssssssssssssdMMMNysssso.       Kernel: 5.15.90.1-microsoft-standard-WSL2
-   /ssssssssssshdmmNNmmyNMMMMhssssss\      Uptime: 7 hours, 11 mins
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Packages: 417 (dpkg), 261 (nix-user), 48 (nix-default), 5 (snap)
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss\    Shell: bash 5.2.15
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: adw-gtk3 [GTK3]
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Icons: Adwaita [GTK3]
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: Windows Terminal
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel i7-7700K (8) @ 4.199GHz
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: Microsoft Corporation Basic Render Driver
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 967MiB / 15963MiB
- \sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
-  +sssssssssdmydMMMMMMMMddddyssssssss+
-   \ssssssssssshdmNNNNmyNMMMMhssssss/
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-        `:+ssssssssssssssssss+:`
-            .-\+oossssoo+/-.
+`                   -`                    stephen@archie
+                  .o+`                   --------------
+                 `ooo/                   OS: Arch Linux x86_64
+                `+oooo:                  Kernel: 6.4.6-arch1-1
+               `+oooooo:                 Uptime: 2 hours, 8 mins
+               -+oooooo+:                Packages: 1145 (pacman)
+             `/:-:++oooo+:               Shell: fish 3.6.1
+            `/++++/+++++++:              Resolution: 1920x1080
+           `/++++++++++++++:             DE: Hyprland
+          `/+++ooooooooooooo/`           WM: sway
+         ./ooosssso++osssssso+`          Theme: adw-gtk3-dark [GTK2/3]
+        .oossssso-````/ossssss+`         Icons: Adwaita [GTK2/3]
+       -osssssso.      :ssssssso.        Terminal: kitty
+      :osssssss/        osssso+++.       CPU: Intel i7-7700K (8) @ 4.500GHz
+     /ossssssss/        +ssssooo/-       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate
+   `/ossssso+/:-        -:/+osssso+-     Memory: 7437MiB / 32033MiB
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/                           ``
 ```
 
 ## Install on a new system
