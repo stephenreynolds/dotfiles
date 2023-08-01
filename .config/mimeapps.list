@@ -8,6 +8,7 @@ application/x-gnome-saved-search=nemo.desktop
 application/cbz=org.pwmt.zathura.desktop
 application/x-cbz=org.pwmt.zathura.desktop
 application/x-cbr=org.pwmt.zathura.desktop
+x-scheme-handler/clickup=ClickUp.desktop
 
 [Added Associations]
 image/jpeg=imv.desktop;
