@@ -15,7 +15,6 @@
     nodejs
     rustup
     go
-    python3
     fzf
     zoxide
     ripgrep
