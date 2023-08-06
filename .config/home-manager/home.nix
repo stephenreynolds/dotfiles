@@ -17,7 +17,6 @@
     go
     fzf
     zoxide
-    ripgrep
     silver-searcher
     fd
     unzip
@@ -197,6 +196,11 @@
       color_theme = "${config.xdg.configHome}/btop/themes/catppuccin_mocha.theme";
       theme_background = false;
     };
+  };
+
+
+  programs.ripgrep = {
+    enable = true;
   };
 
   programs.lazygit = {
