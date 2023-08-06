@@ -1,25 +1,26 @@
 # dotfiles
 
 ```
-                   -`                    stephen@archie
-                  .o+`                   --------------
-                 `ooo/                   OS: Arch Linux x86_64
-                `+oooo:                  Kernel: 6.4.6-arch1-1
-               `+oooooo:                 Uptime: 2 hours, 10 mins
-               -+oooooo+:                Packages: 1145 (pacman)
-             `/:-:++oooo+:               Shell: fish 3.6.1
-            `/++++/+++++++:              Resolution: 1920x1080
-           `/++++++++++++++:             DE: Hyprland
-          `/+++ooooooooooooo/`           WM: sway
-         ./ooosssso++osssssso+`          Theme: adw-gtk3-dark [GTK2/3]
-        .oossssso-````/ossssss+`         Icons: Adwaita [GTK2/3]
-       -osssssso.      :ssssssso.        Terminal: kitty
-      :osssssss/        osssso+++.       CPU: Intel i7-7700K (8) @ 4.500GHz
-     /ossssssss/        +ssssooo/-       GPU: NVIDIA GeForce RTX 3070 Lite Hash Rate
-   `/ossssso+/:-        -:/+osssso+-     Memory: 7347MiB / 32033MiB
-  `+sso+:-`                 `.-/+oso:
- `++:.                           `-/+/
- .`                                 `/
+            .-/+oossssoo+\-.               stephen@Stephen-PC
+        ´:+ssssssssssssssssss+:`           ------------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.3 LTS on Windows 10.0.22621 x86_64
+    .ossssssssssssssssssdMMMNysssso.       Kernel: 5.15.90.1-microsoft-standard-WSL2
+   /ssssssssssshdmmNNmmyNMMMMhssssss\      Uptime: 2 hours, 2 mins
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Packages: 417 (dpkg), 422 (nix-user), 48 (nix-default), 5 (snap)
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss\    Shell: fish 3.6.1
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Terminal: Windows Terminal
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   CPU: Intel i7-7700K (8) @ 4.199GHz
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   GPU: Microsoft Corporation Basic Render Driver
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Memory: 859MiB / 15963MiB
++sssshhhyNMMNyssssssssssssyNMMMysssssss+
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.
+ \sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   \ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-\+oossssoo+/-.
 ```
 
 ## Install on a new system
