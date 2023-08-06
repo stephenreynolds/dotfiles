@@ -7,13 +7,21 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
+    wslu
+    wl-clipboard
+    gcc
+    gnumake
+    tree-sitter
     nodejs
     rustup
     go
-    pyenv
+    python3
     fzf
     zoxide
-    ripgrep-all
+    ripgrep
+    silver-searcher
+    fd
+    unzip
     lazygit
     btop
     neofetch
@@ -35,6 +43,8 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    BROWSER = "wslview";
+    PYENV_ROOT = "${config.xdg.dataHome}/pyenv";
   };
 
   programs.home-manager.enable = true;
@@ -45,9 +55,9 @@
       enable = true;
       options = {
         navigate = true;
-	side-by-side = true;
-	line-number = true;
-	features = "decorations interactive";
+        side-by-side = true;
+        line-number = true;
+        features = "decorations interactive";
       };
     };
     lfs.enable = true;
@@ -56,7 +66,7 @@
     extraConfig = {
       core = {
         editor = "nvim";
-	whitespace.tabwidth = 4;
+        whitespace.tabwidth = 4;
       };
       color.ui = true;
       init.defaultBranch = "main";
@@ -65,9 +75,9 @@
       diff.colorMoved = "default";
       credential = {
         "https://dev.azure.com" = {
-	  useHttpPath = true;
-	};
-	helper = "/mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe";
+          useHttpPath = true;
+        };
+        helper = "/mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe";
       };
     };
   };
@@ -77,8 +87,9 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
     '';
-    plugins = [
-      { name = "foreign-env"; src = pkgs.fishPlugins.foreign-env.src; }
+    plugins = with pkgs; [
+      { name = "foreign-env"; src = fishPlugins.foreign-env.src; }
+      { name = "fzf-fish"; src = fishPlugins.fzf-fish.src; }
     ];
     shellAbbrs = {
       e = "nvim";
@@ -120,7 +131,7 @@
       meson.format = "via [$symbol]($style)";
       nim.format = "via [$symbol]($style)";
       nodejs.format = "via [$symbol]($style)";
-      ocaml.format = "via [$symbol(($switch_indicator$switch_name) )]($style)";
+      ocaml.format = "via [$symbol(\\($switch_indicator$switch_name\\) )]($style)";
       opa.format = "via [$symbol]($style)";
       perl.format = "via [$symbol]($style)";
       php.format = "via [$symbol]($style)";
@@ -139,31 +150,31 @@
 
       palettes.catppuccin_mocha = {
         rosewater = "#f5e0dc";
-	flamingo = "#f2cdcd";
-	pink = "#f5c2e7";
-	mauve = "#cba6f7";
-	red = "#f38ba8";
-	maroon = "#eba0ac";
-	peach = "#fab387";
-	yellow = "#f9e2af";
-	green = "#a6e3a1";
-	teal = "#94e2d5";
-	sky = "#89dceb";
-	sapphire = "#74c7ec";
-	blue = "#89b4fa";
-	lavender = "#b4befe";
-	text = "#cdd6f4";
-	subtext1 = "#bac2de";
-	subtext0 = "#a6adc8";
-	overlay2 = "#9399b2";
-	overlay1 = "#7f849c";
-	overlay0 = "#6c7086";
-	surface2 = "#585b70";
-	surface1 = "#45475a";
-	surface0 = "#313244";
-	base = "#1e1e2e";
-	mantle = "#181825";
-	crust = "#11111b";
+        flamingo = "#f2cdcd";
+        pink = "#f5c2e7";
+        mauve = "#cba6f7";
+        red = "#f38ba8";
+        maroon = "#eba0ac";
+        peach = "#fab387";
+        yellow = "#f9e2af";
+        green = "#a6e3a1";
+        teal = "#94e2d5";
+        sky = "#89dceb";
+        sapphire = "#74c7ec";
+        blue = "#89b4fa";
+        lavender = "#b4befe";
+        text = "#cdd6f4";
+        subtext1 = "#bac2de";
+        subtext0 = "#a6adc8";
+        overlay2 = "#9399b2";
+        overlay1 = "#7f849c";
+        overlay0 = "#6c7086";
+        surface2 = "#585b70";
+        surface1 = "#45475a";
+        surface0 = "#313244";
+        base = "#1e1e2e";
+        mantle = "#181825";
+        crust = "#11111b";
       };
 
       palette = "catppuccin_mocha";
@@ -175,5 +186,11 @@
     defaultEditor = true;
     vimAlias = true;
     viAlias = true;
+  };
+  
+  programs.pyenv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
   };
 }
