@@ -40,7 +40,6 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "nvim";
     BROWSER = "wslview";
     PYENV_ROOT = "${config.xdg.dataHome}/pyenv";
   };
