@@ -51,6 +51,7 @@ in
     fd
     unzip
     neofetch
+    trash-cli
     tex
   ];
 
