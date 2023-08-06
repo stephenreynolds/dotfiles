@@ -83,6 +83,7 @@
     enable =  true;
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
+      fish_add_path $HOME/.config/scripts
     '';
     plugins = with pkgs; [
       { name = "foreign-env"; src = fishPlugins.foreign-env.src; }
