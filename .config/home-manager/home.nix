@@ -14,7 +14,6 @@
     tree-sitter
     nodejs
     rustup
-    go
     fzf
     zoxide
     silver-searcher
@@ -196,6 +195,12 @@
       color_theme = "${config.xdg.configHome}/btop/themes/catppuccin_mocha.theme";
       theme_background = false;
     };
+  };
+
+
+  programs.go = {
+    enable = true;
+    goPath = "${config.xdg.dataHome}/go";
   };
 
 
