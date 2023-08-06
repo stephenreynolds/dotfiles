@@ -15,7 +15,6 @@
     nodejs
     rustup
     fzf
-    zoxide
     silver-searcher
     fd
     unzip
@@ -203,6 +202,11 @@
     goPath = "${config.xdg.dataHome}/go";
   };
 
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+  };
 
   programs.ripgrep = {
     enable = true;
