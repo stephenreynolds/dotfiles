@@ -1,1 +1,0 @@
-/nix/store/w1jvxvndmpg0m5nxgxadpn48rmdgsdww-home-manager-files/.config/fish/conf.d/plugin-foreign-env.fish
