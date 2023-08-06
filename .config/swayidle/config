@@ -1,4 +1,0 @@
-timeout 600 '$HOME/.config/swayidle/lock.sh --grace 10 --fade-in 1'
-timeout 630 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-timeout 3600 'hyprctl dispatch dpms on; sleep 1; systemctl suspend'
-before-sleep '$HOME/.config/swayidle/lock.sh' resume 'hyprctl dispatch dpms on'

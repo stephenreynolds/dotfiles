@@ -1,9 +1,0 @@
-#!/bin/bash
-
-mute=$(pamixer --get-mute)
-if [[ "$mute" == "true" ]]; then
-    echo '{"alt":"mute", "tooltip":"muted", "class":"muted"}'
-else
-    volume=$(pamixer --get-volume)
-    echo "{\"percentage\":$volume, \"tooltip\":\"${volume}%\"}"
-fi

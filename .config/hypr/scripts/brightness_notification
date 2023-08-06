@@ -1,6 +1,0 @@
-#!/usr/bin/sh
-
-command -v notify-send >/dev/null && \
-    VALUE=$(light) && VALUE=${VALUE%%.*} && \
-    notify-send -e -h string:x-canonical-private-synchronous:brightness \
-        -h "int:value:$VALUE" -t 800 "Brightness: ${VALUE}$"
