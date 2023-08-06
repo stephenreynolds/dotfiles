@@ -18,7 +18,6 @@
     fd
     unzip
     neofetch
-    lsd
   ];
 
   home.file = {
@@ -88,7 +87,6 @@
       e = "nvim";
       dots = "git --git-dir $HOME/.dotfiles --work-tree=$HOME";
       lazydots = "lazygit -g $HOME/.dotfiles -w $HOME";
-      ls = "lsd";
     };
   };
 
@@ -250,5 +248,10 @@
         unstagedChangesColor = [ "red" ];
       };
     };
+  };
+
+  programs.lsd = {
+    enable = true;
+    enableAliases = true;
   };
 }
