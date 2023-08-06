@@ -52,6 +52,7 @@ in
     unzip
     neofetch
     trash-cli
+    sad
     tex
   ];
 
