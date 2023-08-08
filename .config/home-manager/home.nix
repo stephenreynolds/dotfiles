@@ -12,17 +12,6 @@ let
     };
   };
 
-  tmux-transient-status = pkgs.tmuxPlugins.mkTmuxPlugin {
-    pluginName = "tmux-transient-status";
-    version = "unstable-2023-08-02";
-    src = pkgs.fetchFromGitHub {
-      owner = "thesast";
-      repo = "tmux-transient-status";
-      rev = "52bdd8e5630b326bbad7184d3abed5f74839d524";
-      sha256 = "sha256-JlflO4CRksJt87m5NuE8abNtbdVOusXyFNxeHqqD1G4=";
-    };
-  };
-
   tex = (pkgs.texlive.combine {
     inherit (pkgs.texlive) scheme-basic
       collection-bibtexextra
@@ -315,13 +304,6 @@ in
         tmuxPlugins.sensible
         tmuxPlugins.tmux-fzf
         tmux-window-name
-        {
-          plugin = tmux-transient-status;
-          extraConfig = ''
-            set -g @transient-status-delay '0.5'
-            set -g @transient-status-stall '2.5'
-            '';
-        }
       ];
       extraConfig = ''
         set -ga terminal-overrides ",*256col*:Tc"
@@ -351,7 +333,10 @@ in
 
         bind T display-popup -E "tt"
         set-option -g detach-on-destroy off
-        '';
+
+        # Disable status bar
+        set -g status off
+      '';
     };
 
     bat = {
