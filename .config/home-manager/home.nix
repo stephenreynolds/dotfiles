@@ -11,16 +11,6 @@ let
       sha256 = "sha256-VHtnN9XyEv8Gbwq5bJuq8QS04opwDOTGzEcLREy6kBA=";
     };
   };
-
-  tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive) scheme-basic
-      collection-bibtexextra
-      collection-binextra
-      collection-fontsrecommended
-      collection-langcjk
-      collection-latexextra
-      collection-publishers;
-  });
 in
 {
   home.username = "stephen";
@@ -42,7 +32,15 @@ in
     neofetch
     trash-cli
     sad
-    tex
+    (texlive.combine {
+      inherit (texlive) scheme-basic
+        collection-bibtexextra
+        collection-binextra
+        collection-fontsrecommended
+        collection-langcjk
+        collection-latexextra
+        collection-publishers;
+    })
   ];
 
   home.file = {
