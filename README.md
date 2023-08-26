@@ -1,4 +1,4 @@
-Notice: I have switch to managing my config using Nix Home Manager. [New repo here](https://github.com/stephenreynolds/nix-config)
+Notice: I now manage my config using Nix Home Manager. [New repo here](https://github.com/stephenreynolds/nix-config)
 
 # dotfiles
 
