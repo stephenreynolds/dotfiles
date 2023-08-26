@@ -1,3 +1,5 @@
+Notice: I have switch to managing my config using Nix Home Manager. [New repo here](https://github.com/stephenreynolds/nix-config)
+
 # dotfiles
 
 ```
