@@ -4,5 +4,7 @@
 	format = ssh
 [user]
 	signingkey = /var/home/stephen/.ssh/id_ed25519
+	name = Stephen Reynolds
+	email = mail@stephenreynolds.dev
 [commit]
 	gpgsign = true
