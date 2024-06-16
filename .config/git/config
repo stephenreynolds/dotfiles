@@ -1,0 +1,6 @@
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[user]
+	signingkey = /var/home/stephen/.ssh/id_ed25519
