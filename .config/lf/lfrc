@@ -1,0 +1,88 @@
+set cleaner "/nix/store/bq5c6999jpxqc5rshqrn33ixqxjyvxnl-cleaner"
+set icons
+set ignorecase
+
+cmd fzf_jump ${{
+          res="$(find . -maxdepth 1 | /nix/store/jvgx1h2p9lp60wdakrc5ha3fmv86imxq-fzf-0.53.0/bin/fzf --reverse --header='Jump to location')"
+          if [ -n "$res" ]; then
+              if [ -d "$res" ]; then
+                  cmd="cd"
+              else
+                  cmd="select"
+              fi
+              res="$(printf '%s' "$res" | sed 's/\\/\\\\/g;s/"/\\"/g')"
+              lf -remote "send $id $cmd \"$res\""
+          fi
+    }}
+cmd fzf_search ${{
+          RG_PREFIX="/nix/store/71jzy8l7bqkw64fn4gnldrr248vqi2ly-ripgrep-14.1.0/bin/rg --column --line-number --no-heading --color=always --smart-case "
+          res="$(
+              FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
+                  /nix/store/jvgx1h2p9lp60wdakrc5ha3fmv86imxq-fzf-0.53.0/bin/fzf --bind "change:reload:$RG_PREFIX {q} || true" \
+                  --ansi --layout=reverse --header 'Search in files' \
+                  | cut -d':' -f1 | sed 's/\\/\\\\/g;s/"/\\"/g'
+          )"
+          [ -n "$res" ] && lf -remote "send $id select \"$res\""
+      }}
+cmd git_branch ${{
+          git branch | /nix/store/jvgx1h2p9lp60wdakrc5ha3fmv86imxq-fzf-0.53.0/bin/fzf | xargs git checkout
+          pwd_shell=$(pwd | sed 's/\\/\\\\/g;s/"/\\"/g')
+          lf -remote "send $id updir"
+          lf -remote "send $id cd \"$pwd_shell\""
+      }}
+cmd setwallpaper ${{
+        ln -sf "$f" /home/stephen/.config/wallpaper
+        /nix/store/2pz6jpcymjlbzbyi98vmwz9ssqx459r1-swww-0.9.5/bin/swww img /home/stephen/.config/wallpaper --transition-type random --transition-step 90
+      }}
+cmd trash ${{
+        /nix/store/69ynjj5c9v023ffr3vk0ga4cysijjxqj-trash-cli-0.24.5.26/bin/trash-put "$fx"
+      }}
+cmd unarchive ${{
+        case "$f" in
+          *.zip) /nix/store/caf632nc5ih4rd83wq1i4bj0bvrzwqzm-unzip-6.0/bin/unzip "$f";;
+          *.tar) tar -xvf "$f";;
+          *.tar.gz) tar -xzvf "$f";;
+          *.tar.xz) tar -xJvf "$f";;
+          *.tar.bz2) tar -zjvf "$f";;
+          *.rar) /nix/store/2a5azznmmjp4wr5chx7zqh9bvfvlfj8s-unrar-7.0.9/bin/unrar "$f";;
+          *) echo "Unsupported format";;
+        esac
+      }}
+cmd z %{{
+        result="$(/nix/store/5j9fach388y8w93ay49n4j4pya9rfwfj-zoxide-0.9.4/bin/zoxide query --exclude $PWD $@ | sed 's/\\/\\\\/g;s/"/\\"/g')"
+        lf -remote "send $id cd \"$result\""
+      }}
+cmd zi ${{
+        result="$(/nix/store/5j9fach388y8w93ay49n4j4pya9rfwfj-zoxide-0.9.4/bin/zoxide query -i | sed 's/\\/\\\\/g;s/"/\\"/g')"
+        lf -remote "send $id cd \"$result\""
+      }}
+
+map <c-f> push :fzf_jump<space>
+map <c-s> :fzf_search
+map DD trash
+map gb git_branch
+map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit}}
+map gp ${{clear; git pull --rebase || true; echo ' press ENTER '; read ENTER}}
+map gs ${{clear; git status; echo ' press ENTER '; read ENTER}}
+map sw setwallpaper
+map xx unarchive
+map zi zi
+map zz z
+
+
+
+set previewer /nix/store/jcg408k66mbrkcd3qgh90fssb3kw8cbf-previewer
+
+
+
+${{
+    w=$(tput cols)
+    if [ $w -le 80 ]; then
+        lf -remote "send $id set ratios 1:2"
+    elif [ $w -le 160 ]; then
+        lf -remote "send $id set ratios 1:2:3"
+    else
+        lf -remote "send $id set ratios 1:2:3:5"
+    fi
+}}
+

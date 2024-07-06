@@ -1,0 +1,5 @@
+git:
+  overrideGpg: true
+gui:
+  nerdFontsVersion: "3"
+  showRandomTip: false

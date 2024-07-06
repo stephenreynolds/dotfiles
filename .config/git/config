@@ -1,10 +1,89 @@
-[init]
-	defaultBranch = main
-[gpg]
-	format = ssh
-[user]
-	signingkey = /var/home/stephen/.ssh/id_ed25519
-	name = Stephen Reynolds
-	email = mail@stephenreynolds.dev
+[alias]
+	amend = "commit --amend"
+	amend-author = "!f() { git commit --amend --author \"$1 <$2>\" -m \"$3\"; }; f"
+	authors = "!git log --format='%aN <%aE>' | sort -u"
+	br = "branch"
+	ci = "commit"
+	co = "checkout"
+	co-author = "!f() { git commit --author \"$1 <$2>\" -m \"$3\"; }; f"
+	count = "shortlog -sn"
+	cp = "cherry-pick"
+	dump = "cat-file -p"
+	last = "log -1 HEAD"
+	lg = "log --graph --pretty=format:'%C(yellow)%h%Creset %C(green)%ad%Creset | %s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset' --date=relative"
+	lga = "log --graph --pretty=format:'%C(yellow)%h%Creset %C(green)%ad%Creset | %s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset' --date=relative --all"
+	ls = "ls-files"
+	pristine = "!git reset --hard && git clean -dfx"
+	prune = "remote prune origin"
+	st = "status"
+	type = "cat-file -t"
+	undo = "reset HEAD~"
+	unstage = "reset HEAD --"
+
+[color]
+	ui = true
+
 [commit]
 	gpgsign = true
+	verbose = true
+
+[core]
+	editor = "nvim"
+	pager = "delta"
+
+[core "whitespace"]
+	tabwidth = 4
+
+[credential "https://gist.github.com"]
+	helper = "gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = "gh auth git-credential"
+
+[delta]
+	features = "decorations interactive"
+	line-number = true
+	navigate = true
+	side-by-side = true
+
+[diff]
+	colorMoved = "default"
+
+[filter "lfs"]
+	clean = "git-lfs clean -- %f"
+	process = "git-lfs filter-process"
+	required = true
+	smudge = "git-lfs smudge -- %f"
+
+[gpg]
+	format = "ssh"
+	program = "gpg2"
+
+[init]
+	defaultBranch = "main"
+
+[interactive]
+	diffFilter = "delta --color-only"
+
+[log]
+	date = "iso"
+
+[merge]
+	conflictStyle = "zdiff3"
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rerere]
+	enable = true
+
+[tag]
+	gpgSign = true
+
+[user]
+	email = "mail@stephenreynolds.dev"
+	name = "Stephen Reynolds"
+	signingKey = "$HOME/.ssh/id_ed25519"
