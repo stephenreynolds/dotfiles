@@ -1,0 +1,2 @@
+sync_dir = "$HOME/.onedrive"
+enable_logging = "true"

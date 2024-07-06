@@ -1,0 +1,4 @@
+set font	"Ubuntu Regular 12"
+set guioptions	"none"
+set recolor	"true"
+set selection-clipboard	"clipboard"
