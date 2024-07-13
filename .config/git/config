@@ -86,4 +86,4 @@
 [user]
 	email = "mail@stephenreynolds.dev"
 	name = "Stephen Reynolds"
-	signingKey = "$HOME/.ssh/id_ed25519"
+	signingKey = "~/.ssh/id_ed25519"
