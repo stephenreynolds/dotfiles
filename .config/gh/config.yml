@@ -1,3 +1,4 @@
 aliases: {}
 editor: "nvim"
 git_protocol: ssh
+version: "1"
