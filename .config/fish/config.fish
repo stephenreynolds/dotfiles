@@ -25,11 +25,6 @@ status is-interactive; and begin
     alias clear 'printf '\''\033[2J\033[3J\033[1;1H'\'''
     alias vimdiff 'nvim -d'
 
-    fzf --fish | source
-
-    set -gx GPG_TTY (tty)
-    /nix/store/94sh4d6iv54y6zwdqjzdrs77zj1pzsq1-gnupg-2.4.5/bin/gpg-connect-agent updatestartuptty /bye >/dev/null
-
     zoxide init fish | source
 
     # Starship
