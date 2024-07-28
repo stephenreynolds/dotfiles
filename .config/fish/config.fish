@@ -33,10 +33,6 @@ status is-interactive; and begin
         enable_transience
     end
 
-    function __fish_command_not_found_handler --on-event fish_command_not_found
-        command-not-found $argv
-    end
-
     # direnv
     set -x DIRENV_LOG_FORMAT = ''
     direnv hook fish | source
