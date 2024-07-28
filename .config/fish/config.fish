@@ -1,8 +1,3 @@
-status is-login; and begin
-    # Login shell initialisation
-    gpgconf --launch gpg-agent
-end
-
 # Disable gretting
 function fish_greeting
 end
