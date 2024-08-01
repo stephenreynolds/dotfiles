@@ -1,5 +1,3 @@
-all: install-brew install-fisher stow install-onedrive mkdirs
-
 install-brew:
     brew bundle
 
@@ -15,5 +13,13 @@ stow:
     stow . -t $HOME
 
 install-onedrive:
-    sudo rpm-ostree install ondrive --apply-live
+    mkdir -p $HOME/.onedrive/{Documents,Music,Pictures,Videos}
+    ln -sf $HOME/.onedrive/Documents $HOME/
+    ln -sf $HOME/.onedrive/Pictures $HOME/
+    ln -sf $HOME/.onedrive/Music $HOME/
+    ln -sf $HOME/.onedrive/Videos $HOME/
+    sudo rpm-ostree install onedrive --apply-live
     systemctl --user enable onedrive
+
+mkdirs:
+    mkdir -p $HOME/src/{archive,cloned,repos,sandbox,work}
