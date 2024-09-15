@@ -9,6 +9,11 @@ install-fzf-fish: install-fisher
     #!/usr/bin/env fish
     fisher install PatrickF1/fzf.fish
 
+install-cargo:
+    #!/usr/bin/env fish
+    curl https://sh.rustup.rs -sSf | sh
+    rustup default
+
 stow:
     stow . -t $HOME
 
