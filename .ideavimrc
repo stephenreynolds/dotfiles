@@ -1,0 +1,5 @@
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+
+set relativenumber
