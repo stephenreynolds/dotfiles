@@ -28,3 +28,8 @@ install-onedrive:
 
 mkdirs:
     mkdir -p $HOME/src/{archive,cloned,repos,sandbox,work}
+
+docker:
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    newgrp docker
