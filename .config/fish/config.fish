@@ -38,6 +38,8 @@ status is-interactive; and begin
     end
     abbr -a !! --position anywhere --function last_history_item
 
+    fish_add_path ~/.local/share/bin
+
     # Use vim bindings and cursors
     fish_vi_key_bindings
     set fish_cursor_default block blink
