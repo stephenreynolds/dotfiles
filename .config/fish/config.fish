@@ -74,3 +74,14 @@ status is-interactive; and begin
     set -U fish_pager_color_prefix white --bold --underline
     set -U fish_pager_color_progress brwhite '--background=cyan'
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# pnpm
+set -gx PNPM_HOME "/home/stephen/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
