@@ -13,9 +13,6 @@
                 "default": "",
                 "empty": ""
             },
-            "persistent-workspaces": {
-                "*": []
-            }
         },
         "clock": {
             "format": "{:%a %b %e %I:%M %p}",
