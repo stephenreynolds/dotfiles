@@ -4,7 +4,7 @@
         "reload_style_on_change": true,
         "modules-left": ["hyprland/workspaces"],
         "modules-center": [],
-        "modules-right": ["tray","network","clock"],
+        "modules-right": ["tray","network","pulseaudio","clock"],
 
         "hyprland/workspaces": {
             "format": "{icon}",
@@ -53,8 +53,23 @@
             ]
         },
         "tray": {
-            "icon-size": 16,
+            "icon-size": 14,
             "spacing": 13
         },
+        "pulseaudio": {
+            "max-volume": 100,
+            "scroll-step": 2,
+            "format": "{icon}",
+            "tooltip-format": "{volume}%",
+            "format-muted": " ",
+            "format-icons": {
+                "default": [
+                    " ",
+                    " ",
+                    " "
+                ]
+            },
+            "on-click": "pwvucontrol"
+        }
 } 
 
