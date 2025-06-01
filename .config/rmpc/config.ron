@@ -2,7 +2,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    address: "/tmp/mpd_socket",
+    address: "127.0.0.1:6600",
     password: None,
     theme: None,
     cache_dir: Some("/tmp/rmpc/cache"),
