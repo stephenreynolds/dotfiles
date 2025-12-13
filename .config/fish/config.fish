@@ -87,4 +87,6 @@ end
 # pnpm end
 
 # wsl2 ssh agent
-eval "$(/usr/sbin/wsl2-ssh-agent)"
+if uname -r | grep -q microsoft-standard
+    eval "$(/usr/sbin/wsl2-ssh-agent)"
+end

@@ -6,6 +6,8 @@
 # For explanations of all config options below see docs/USAGE.md or the man page.
 #
 sync_dir = "~/.onedrive"
+force_session_upload = "true"
+delay_inotify_processing = "true"
 # skip_file = "~*|.~*|*.tmp"
 # monitor_interval = "300"
 # skip_dir = ""

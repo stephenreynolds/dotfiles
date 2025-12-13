@@ -60,7 +60,7 @@
 	program = "gpg2"
 
 [init]
-	defaultBranch = "main"
+	defaultBranch = main
 
 [interactive]
 	diffFilter = "delta --color-only"
@@ -87,3 +87,5 @@
 	email = "mail@stephenreynolds.dev"
 	name = "Stephen Reynolds"
 	signingKey = "~/.ssh/id_ed25519"
+[fetch]
+	prune = true
